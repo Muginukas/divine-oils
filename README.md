@@ -1,4 +1,4 @@
-# Divine Oils — aliejų žinynas
+# Divine Oils & Divine Seed
 
 Statinis vieno puslapio žinynas apie augalinius aliejus lietuvių kalba. Pagrindinis
 dėmesys skiriamas **amaranto (burnočio) sėklų aliejui**, o kartu apžvelgiami visi
@@ -8,7 +8,13 @@ yra, iš kur jie gaunami, kur ir kaip naudojami.
 Žinyne **67 aliejai**, kiekvienas su kilme, veikliosiomis medžiagomis, riebalų rūgščių
 sudėtimi, galiojimo terminu, atsargumo priemonėmis ir pakaitalų sąrašu.
 
+Atskiras puslapis **Divine Seed** (`seklos.html`) skirtas sėkloms — **55 pasaulio sėklos**
+su maistine verte, paruošimo technika, daiginimo gidu ir saugos informacija. Puslapiai
+susieti navigacijos nuorodomis ir dalijasi stiliais bei katalogo varikliu.
+
 ## Turinys
+
+### Divine Oils (`index.html`)
 
 | Skyrius | Apie ką |
 |---|---|
@@ -25,14 +31,36 @@ sudėtimi, galiojimo terminu, atsargumo priemonėmis ir pakaitalų sąrašu.
 | Žodynėlis | 21 terminas — nuo chemotipo iki nesumuilinamosios frakcijos |
 | DUK | 17 dažniausių klausimų |
 
+
+### Divine Seed (`seklos.html`)
+
+| Skyrius | Apie ką |
+|---|---|
+| Kas yra sėkla | Sėklos sandara, kur baigiasi sėkla ir prasideda grūdas |
+| Katalogas | 55 sėklos, 6 kategorijos, filtrai, rikiavimas pagal baltymus |
+| Maistinė vertė | Palyginamoji lentelė: kalorijos, baltymai, riebalai, skaidulos |
+| Paruošimas | Malimas, mirkymas, skrudinimas, daiginimas + antimaistinės medžiagos |
+| Daiginimas | Žingsniai, laiko lentelė, higienos taisyklės |
+| Laikymas | Terminai pagal sėklos tipą, šaldiklio panaudojimas |
+| Sauga | Nuodingos sėklos, saiko reikalaujančios, ES alergenai |
+| DUK | 9 klausimai |
+
 ## Struktūra
 
 ```
-index.html              visas puslapio turinys
-assets/css/styles.css   stiliai, šviesi ir tamsi tema
-assets/js/app.js        katalogo atvaizdavimas, filtrai, paieška, temos perjungimas
-assets/data/oils.js     aliejų duomenys (window.OILS)
+index.html              aliejų žinynas (Divine Oils)
+seklos.html             sėklų žinynas (Divine Seed)
+assets/css/styles.css   bendri stiliai, šviesi ir tamsi tema
+assets/js/theme.js      temos perjungimas (abu puslapiai)
+assets/js/catalog.js    bendras katalogo variklis: filtrai, paieška, rikiavimas
+assets/js/app.js        aliejų katalogo konfigūracija
+assets/js/seeds-app.js  sėklų katalogo konfigūracija
+assets/data/oils.js     67 aliejai (window.OILS)
+assets/data/seeds.js    55 sėklos (window.SEEDS)
 ```
+
+Abu katalogai naudoja tą patį `buildCatalog()` variklį — kiekvienas puslapis paduoda
+savo duomenis, kortelės atvaizdavimo funkciją, paieškos laukus ir rikiavimo taisykles.
 
 Priklausomybių, kompiliavimo ar diegimo nereikia — vien statiniai failai.
 
@@ -79,7 +107,15 @@ Laukai `desc`, `uses` ir `tags` rodomi kortelėje iš karto; `origin`, `actives`
 aliejų“. Laukuose, išskyrus `note`, HTML ekranuojamas; leidžiamos tik `<b>` ir `<i>`
 žymos.
 
-Kategorijų filtrai aprašyti `index.html` faile, `.chips` bloke — pridedant naują
+### Sėklos įrašo pridėjimas
+
+Į `assets/data/seeds.js` masyvą įrašykite objektą su laukais `id`, `name`, `latin`,
+`cats` (`kasdienes` | `pseudograudai` | `prieskoniai` | `riesutines` | `daiginimui` |
+`atsargiai`), `star`, `desc`, `origin`, `nutrition`, `key`, `taste`, `uses`, `prep`,
+`dose`, `avoid`, `swap`, `note`. Kortelėje iš karto rodomi `desc`, `nutrition`, `key`,
+`taste`, `dose` ir `uses`; `origin`, `prep`, `avoid` ir `swap` — išskleidžiamame skyrelyje.
+
+Kategorijų filtrai aprašyti atitinkamo puslapio `.chips` bloke — pridedant naują
 kategoriją reikia naujo `.chip` mygtuko su atitinkamu `data-cat`. Rikiavimo variantai
 aprašyti `#oil-sort` sąraše ir `sorted()` funkcijoje `assets/js/app.js`.
 
