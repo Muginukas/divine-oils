@@ -18,13 +18,17 @@
   <div class="wrap nav-inner">
     <a class="brand" href="#">Divine <span>Oils</span></a>
     <div class="nav-links">
-      <a href="#amaranto">Amaranto aliejus</a>
+      <a href="#amaranto">Amarantas</a>
       <a href="#katalogas">Katalogas</a>
       <a href="#kaitra">Kaitra</a>
       <a href="#odai">Odai</a>
+      <a href="#receptai">Receptai</a>
+      <a href="#riebalai">Riebalai</a>
       <a href="#gamyba">Gamyba</a>
       <a href="#laikymas">Laikymas</a>
+      <a href="#namams">Namams</a>
       <a href="#sauga">Sauga</a>
+      <a href="#zodynelis">Terminai</a>
       <a href="#duk">DUK</a>
     </div>
     <button class="theme-btn" id="theme-btn" type="button" aria-label="Perjungti temą">☾</button>
@@ -38,13 +42,13 @@
     <p class="lead">
       Kuo skiriasi šaltai spaustas nuo rafinuoto, kurį aliejų galima kaitinti, o kurį sugadinsite
       keptuvėje, kas yra skvalenas ir kodėl amaranto sėklų aliejus yra vienas brangiausių pasaulyje.
-      Visi atsakymai vienoje vietoje — su sudėtimi, dūmų taškais ir konkrečiais panaudojimo būdais.
+      Visi atsakymai vienoje vietoje — su sudėtimi, kilme, dūmų taškais, galiojimo terminais, atsargumo priemonėmis ir konkrečiais panaudojimo būdais virtuvėje, kosmetikoje ir namų ūkyje.
     </p>
     <div class="hero-stats">
-      <div class="stat"><b>38</b><span>aliejai su aprašymais</span></div>
+      <div class="stat"><b>67</b><span>aliejai su išsamiais aprašymais</span></div>
       <div class="stat"><b>6–8 %</b><span>skvaleno amaranto aliejuje</span></div>
       <div class="stat"><b>107–270 °C</b><span>dūmų taškų amplitudė</span></div>
-      <div class="stat"><b>4</b><span>kategorijos: maistui, odai, eteriniai, nišiniai</span></div>
+      <div class="stat"><b>8</b><span>naminių mišinių receptų</span></div>
     </div>
   </div>
 </header>
@@ -195,7 +199,7 @@
     <div class="section-head">
       <span class="eyebrow">Katalogas</span>
       <h2>Visi aliejai — kas, kam ir kaip</h2>
-      <p>Filtruokite pagal paskirtį arba ieškokite pagal savybę: „omega-3“, „masažui“, „spuogams“, „aukšta kaitra“.</p>
+      <p>Filtruokite pagal paskirtį, rikiuokite arba ieškokite pagal savybę: „omega-3“, „masažui“, „spuogams“, „aukšta kaitra“, „muilui“. Kiekvienoje kortelėje po santrauka rasite išskleidžiamą skyrelį su kilme, veikliosiomis medžiagomis, atsargumo priemonėmis ir pakaitalais.</p>
     </div>
 
     <div class="toolbar">
@@ -207,12 +211,21 @@
         <button class="chip" type="button" data-cat="eteriniai" aria-pressed="false">Eteriniai</button>
         <button class="chip" type="button" data-cat="specifiniai" aria-pressed="false">Nišiniai</button>
       </div>
+      <div class="sort-wrap">
+        <label for="oil-sort">Rikiuoti:</label>
+        <select id="oil-sort">
+          <option value="numatytas">pagal kategorijas</option>
+          <option value="pavadinimas">pagal pavadinimą</option>
+          <option value="dumu-auk">pagal dūmų tašką</option>
+          <option value="kaina">nuo pigiausio</option>
+        </select>
+      </div>
     </div>
 
     <p class="count" id="oil-count" aria-live="polite"></p>
     <div class="oil-grid" id="oil-grid"></div>
     <noscript>
-      <p class="empty">Katalogui reikalingas JavaScript. Įjunkite jį naršyklėje, kad matytumėte visus 38 aliejus.</p>
+      <p class="empty">Katalogui reikalingas JavaScript. Įjunkite jį naršyklėje, kad matytumėte visus 67 aliejus.</p>
     </noscript>
   </div>
 </section>
@@ -339,6 +352,208 @@
   </div>
 </section>
 
+<!-- ======================= RECEPTAI ======================= -->
+<section id="receptai">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Praktika</span>
+      <h2>Mišinių receptai</h2>
+      <p>
+        Aštuoni baziniai receptai, nuo kurių galima pradėti. Proporcijos svarbesnės už tikslius
+        aliejus — beveik kiekvieną galima pakeisti tos pačios grupės atitikmeniu. Ruoškite
+        mažais kiekiais ir laikykite tamsiame stikle.
+      </p>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:16px">
+      <div class="card recipe">
+        <h3>Veido serumas — sausai odai</h3>
+        <div class="ratio">
+          20 ml <b>abrikosų kauliukų</b> aliejaus · 5 ml <b>amaranto</b> · 4 ml <b>erškėtuolių</b> ·
+          1 ml <b>kviečių gemalų</b>
+        </div>
+        <ol>
+          <li>Sumaišykite 30 ml tamsiame buteliuke su lašintuvu.</li>
+          <li>Norėdami kvapo, įlašinkite 3 lašus levandų eterinio aliejaus (tai 0,5 %).</li>
+          <li>Tepkite 3–4 lašus ant drėgno veido vakare.</li>
+          <li>Laikykite šaldytuve, sunaudokite per 3 mėn.</li>
+        </ol>
+      </div>
+
+      <div class="card recipe">
+        <h3>Veido serumas — riebiai odai</h3>
+        <div class="ratio">
+          15 ml <b>lazdyno riešutų</b> · 10 ml <b>jojobos</b> · 5 ml <b>kanapių</b> aliejaus
+        </div>
+        <ol>
+          <li>Visi trys lengvi ir nekomedogeniški — mišinys nesunkina odos.</li>
+          <li>Taškinei priežiūrai įlašinkite 3 lašus arbatmedžio eterinio aliejaus.</li>
+          <li>2 lašai visam veidui — daugiau nereikia.</li>
+          <li>Laikosi 6 mėn. kambario temperatūroje.</li>
+        </ol>
+      </div>
+
+      <div class="card recipe">
+        <h3>Purus kūno sviestas</h3>
+        <div class="ratio">
+          100 g <b>ši</b> arba <b>mango sviesto</b> · 30 ml <b>migdolų</b> aliejaus ·
+          neprivaloma: 10 lašų eterinio aliejaus
+        </div>
+        <ol>
+          <li>Sviestą ištirpdykite vandens vonelėje, nukaitinkite.</li>
+          <li>Įpilkite skystą aliejų, atvėsinkite iki tirštėjimo (galima šaldytuve 20–30 min.).</li>
+          <li>Plakite mikseriu 5 min., kol taps purus kaip grietinėlė.</li>
+          <li>Sudėkite į stiklainį. Be vandens — konservantų nereikia; laikykite sausai, iki 6 mėn.</li>
+        </ol>
+      </div>
+
+      <div class="card recipe">
+        <h3>Plaukų kaukė prieš plovimą</h3>
+        <div class="ratio">
+          2 šaukštai <b>kokosų</b> aliejaus · 1 šaukštas <b>ricinos</b> ·
+          5 lašai <b>rozmarino</b> eterinio aliejaus
+        </div>
+        <ol>
+          <li>Pašildykite iki kūno temperatūros, kad kokosų aliejus suskystėtų.</li>
+          <li>Įmasažuokite į galvos odą, likutį paskirstykite iki galiukų.</li>
+          <li>Palaikykite 1 val. arba per naktį su rankšluosčiu.</li>
+          <li>Plaukite šampūnu dukart — ricinos aliejus išsiplauna sunkiai.</li>
+        </ol>
+      </div>
+
+      <div class="card recipe">
+        <h3>Masažo mišinys raumenims</h3>
+        <div class="ratio">
+          50 ml <b>vynuogių kauliukų</b> aliejaus · 10 lašų <b>pipirmėčių</b> ·
+          10 lašų <b>eukalipto</b> · 10 lašų <b>rozmarino</b>
+        </div>
+        <ol>
+          <li>Tai 3 % koncentracija — tinka suaugusiems, trumpalaikiam naudojimui.</li>
+          <li>Vaikams nuo 6 m. sumažinkite eterinius aliejus per pusę ir pašalinkite pipirmėtę.</li>
+          <li>Nenaudoti prieš saulės vonias ar ant pažeistos odos.</li>
+          <li>Laikosi 12 mėn.</li>
+        </ol>
+      </div>
+
+      <div class="card recipe">
+        <h3>Lūpų balzamas</h3>
+        <div class="ratio">
+          1 dalis <b>bičių vaško</b> · 1 dalis <b>kakavos</b> arba <b>ši sviesto</b> ·
+          2 dalys <b>skysto aliejaus</b> (migdolų, jojobos, amaranto)
+        </div>
+        <ol>
+          <li>Pavyzdys: 5 g vaško + 5 g kakavos sviesto + 10 ml aliejaus — maždaug 4 tūbelės.</li>
+          <li>Tirpdykite vandens vonelėje, maišydami.</li>
+          <li>Supilkite į tūbeles ar dėžutes, palikite sustingti 1 val.</li>
+          <li>Per kietas — pridėkite aliejaus; per minkštas — vaško.</li>
+        </ol>
+      </div>
+
+      <div class="card recipe">
+        <h3>Aliejinis veido valymas (OCM)</h3>
+        <div class="ratio">
+          Sausai odai: 80 % <b>jojobos</b> + 20 % <b>ricinos</b> ·
+          Riebiai odai: 60 % <b>jojobos</b> + 40 % <b>ricinos</b>
+        </div>
+        <ol>
+          <li>Ant sauso veido masažuokite 1 min. — aliejus tirpdo makiažą ir riebalus.</li>
+          <li>Uždėkite karštame vandenyje suvilgytą rankšluostį, palaikykite 20 s.</li>
+          <li>Švelniai nuvalykite ir, jei reikia, nuprauskite švelniu prausikliu.</li>
+          <li>Jei oda tempia — mažinkite ricinos dalį.</li>
+        </ol>
+      </div>
+
+      <div class="card recipe">
+        <h3>Barzdos aliejus</h3>
+        <div class="ratio">
+          15 ml <b>jojobos</b> · 10 ml <b>argano</b> · 5 ml <b>lazdyno riešutų</b> ·
+          6 lašai eterinio aliejaus (kedro, smilkinių)
+        </div>
+        <ol>
+          <li>Visi trys lengvi — barzda nebus lipni.</li>
+          <li>3–6 lašai po dušo, kol oda dar drėgna.</li>
+          <li>Įtrinkite į odą po barzda, ne tik į plaukus — niežėjimas kyla nuo sausos odos.</li>
+          <li>Laikosi iki 12 mėn.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Neturite reikiamo aliejaus? Kuo pakeisti</h3>
+      <div class="table-scroll" style="margin-top:12px">
+        <table>
+          <thead><tr><th>Vietoj</th><th>Tinka</th><th>Kodėl veikia</th></tr></thead>
+          <tbody>
+            <tr><td>Argano</td><td>Marulos, baobabo, lazdyno riešutų</td><td>Panašus oleino rūgšties kiekis ir lengvas pojūtis</td></tr>
+            <tr><td>Amaranto</td><td>Ryžių sėlenų, skvalanas</td><td>Artimiausi pagal skvaleną ir susigėrimą</td></tr>
+            <tr><td>Jojobos</td><td>Skvalanas, lazdyno riešutų</td><td>Lengvi, stabilūs, tinka visiems odos tipams</td></tr>
+            <tr><td>Ši sviesto</td><td>Mango, kakavos sviestas</td><td>Ta pati funkcija — kietas sviestas balzamams</td></tr>
+            <tr><td>Erškėtuolių</td><td>Aviečių sėklų, granatų sėklų</td><td>Panašus omega-3 ir regeneracinis profilis</td></tr>
+            <tr><td>Alyvuogių (kepimui)</td><td>Rapsų, avokadų, ryžių sėlenų</td><td>Aukštesnis dūmų taškas, neutralus skonis</td></tr>
+            <tr><td>Linų sėmenų</td><td>Judros, kanapių, chia</td><td>Omega-3 šaltiniai; judra laikosi ilgiau</td></tr>
+            <tr><td>Kokosų (kosmetikoje)</td><td>Babasu, ši sviestas</td><td>Panaši tekstūra, mažiau komedogeniški</td></tr>
+            <tr><td>Nakvišų / agurklės</td><td>Juodųjų serbentų sėklų</td><td>Visi trys — GLA šaltiniai</td></tr>
+            <tr><td>Migdolų (masažui)</td><td>Abrikosų, saulėgrąžų, vynuogių kauliukų</td><td>Panašus slydimas ir kaina</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RIEBALAI ======================= -->
+<section id="riebalai">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Chemija be chemijos</span>
+      <h2>Riebalų rūgščių gidas</h2>
+      <p>
+        Kiekvieno aliejaus savybes lemia ne pavadinimas, o riebalų rūgščių derinys. Supratę
+        kelias pagrindines, galėsite spėti, kaip elgsis bet kuris naujas aliejus — net jo
+        neišbandę.
+      </p>
+    </div>
+
+    <div class="table-scroll" style="margin-bottom:18px">
+      <table>
+        <thead>
+          <tr><th>Riebalų rūgštis</th><th>Tipas</th><th>Kur daugiausia</th><th>Ką ji duoda</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lauro (C12)</td><td>Sotieji</td><td>Kokosų, palmių branduolių</td><td>Kietumas, putos muile, prasiskverbimas į plauką</td></tr>
+          <tr><td>Palmitino (C16)</td><td>Sotieji</td><td>Palmių, amaranto, šaltalankių</td><td>Tirštumas, stabilumas, apsauginė plėvelė</td></tr>
+          <tr><td>Stearino (C18)</td><td>Sotieji</td><td>Ši, kakavos, mango sviestas</td><td>Kietumas kambario temperatūroje, tirpsta ant odos</td></tr>
+          <tr><td>Palmitoleino (omega-7)</td><td>Mononesotieji</td><td>Makadamijos, šaltalankių minkštimo</td><td>Greitas susigėrimas, gleivinių ir brandžios odos priežiūra</td></tr>
+          <tr><td>Oleino (omega-9)</td><td>Mononesotieji</td><td>Alyvuogių, avokadų, lazdyno, marulos</td><td>Stabilumas kaitrai, sotumas, minkštinimas</td></tr>
+          <tr><td>Linolo (omega-6)</td><td>Polinesotieji</td><td>Saulėgrąžų, dygminų, kanapių, vynuogių</td><td>Odos barjero atkūrimas; greičiau genda</td></tr>
+          <tr><td>Gama linoleno, GLA (omega-6)</td><td>Polinesotieji</td><td>Agurklės, nakvišų, juodųjų serbentų</td><td>Priešuždegiminių medžiagų pirmtakas, sausai odai</td></tr>
+          <tr><td>Alfa linoleno, ALA (omega-3)</td><td>Polinesotieji</td><td>Linų, chia, judros, kanapių</td><td>Būtinoji rūgštis; genda greičiausiai, nekaitinti</td></tr>
+          <tr><td>EPA ir DHA (omega-3)</td><td>Polinesotieji</td><td>Žuvų taukai, dumblių aliejus</td><td>Paruoštos formos, kurių augaliniai aliejai neturi</td></tr>
+          <tr><td>Ricinoleino</td><td>Hidroksi-mononesotieji</td><td>Ricinos (87 %)</td><td>Klampumas, putos muile, drėgmės sulaikymas</td></tr>
+          <tr><td>Punikos (omega-5)</td><td>Konjuguoti polinesotieji</td><td>Granatų sėklų (iki 80 %)</td><td>Regeneracija; reta ir brangi</td></tr>
+          <tr><td>Pinoleno</td><td>Polinesotieji</td><td>Kedro riešutų</td><td>Tiriama dėl poveikio sotumui</td></tr>
+          <tr><td>Eruko</td><td>Mononesotieji</td><td>Garstyčių, senų rapsų veislių</td><td>Ribojama maiste dėl poveikio širdies raumeniui</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <h4>Taisyklė nr. 1 — stabilumas</h4>
+        <p style="font-size:.91rem;color:var(--muted);margin:0">Kuo daugiau dvigubų jungčių, tuo jautresnė rūgštis. Sotieji nekinta, oleino rūgštis (1 jungtis) laikosi gerai, linolo (2) prasčiau, alfa linoleno (3) — blogiausiai. Todėl kokosų aliejus guli metus, o linų — savaites.</p>
+      </div>
+      <div class="card">
+        <h4>Taisyklė nr. 2 — tekstūra</h4>
+        <p style="font-size:.91rem;color:var(--muted);margin:0">Sotieji ir ilgos grandinės rūgštys duoda kietumą ir sotumą, trumpesnės ir nesotiesios — skystumą ir lengvumą. Todėl ši sviestas kietas, o vynuogių kauliukų aliejus vandeningas.</p>
+      </div>
+      <div class="card">
+        <h4>Taisyklė nr. 3 — odos barjeras</h4>
+        <p style="font-size:.91rem;color:var(--muted);margin:0">Linolo rūgštis yra keramidų, sudarančių odos barjerą, statybinė medžiaga. Sausa ir į spuogus linkusi oda dažnai turi jos trūkumą — todėl kanapių ar dygminų aliejus jai tinka labiau nei sotus kokosų.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ======================= GAMYBA ======================= -->
 <section id="gamyba">
   <div class="wrap">
@@ -435,6 +650,58 @@
   </div>
 </section>
 
+<!-- ======================= NAMAMS ======================= -->
+<section id="namams">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Namų ūkis</span>
+      <h2>Aliejai už virtuvės ir vonios ribų</h2>
+      <p>
+        Dalis aliejų namuose naudingesni ne lėkštėje, o dirbtuvėje. Svarbiausia taisyklė —
+        skirti <b>džiūstančius</b> aliejus (kietėja į plėvelę) nuo <b>nedžiūstančių</b>
+        (lieka riebūs) ir nemaišyti techninių su maistiniais.
+      </p>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:16px">
+      <div class="card">
+        <h3>Medienai ir įrankiams</h3>
+        <ul style="font-size:.93rem;padding-left:20px;margin-bottom:0">
+          <li><b>Pjaustymo lentos ir mediniai indai</b> — maistinės kokybės mineralinis aliejus arba frakcionuotas kokosų. Augaliniai (alyvuogių, saulėgrąžų) apkarsta ir ima dvokti.</li>
+          <li><b>Baldai, darbastaliai, grindys</b> — tungo arba linų alyva. Tepama plonais sluoksniais, tarp jų 24 val. džiūvimo.</li>
+          <li><b>Ketaus keptuvės įdeginimas</b> — plonas sluoksnis aliejaus su aukštu dūmų tašku (linų, saulėgrąžų, rapsų), kaitinama orkaitėje 230 °C 1 val. Kartoti 3–4 kartus.</li>
+          <li><b>Įrankiai, spynos, vyriai</b> — mineralinis aliejus. Nerūdija ir nelimpa.</li>
+          <li><b>Odiniai gaminiai</b> (batai, diržai) — specialūs odos aliejai arba nedidelis kiekis neutralaus augalinio; per daug suminkština odą.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Valymui ir sodui</h3>
+        <ul style="font-size:.93rem;padding-left:20px;margin-bottom:0">
+          <li><b>Lipdukų ir klijų žymės</b> — citrusinis eterinis aliejus ant vatos; limonenas tirpina klijus.</li>
+          <li><b>Nerūdijančio plieno paviršiai</b> — lašas aliejaus ant servetėlės nuvalo pirštų atspaudus ir palieka blizgesį.</li>
+          <li><b>Naminis baldų valiklis</b> — 2 dalys alyvuogių aliejaus, 1 dalis citrinos sulčių; naudoti iškart.</li>
+          <li><b>Augalų kenkėjai</b> — 5 ml neem aliejaus + 2 ml skysto muilo + 1 l vandens. Purkšti vakare, ne žydėjimo metu.</li>
+          <li><b>Kambarinių augalų lapai</b> — keli lašai ant drėgnos šluostės grąžina blizgesį (nenaudoti ant pūkuotų lapų).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="warn">
+      <h3>Gaisro pavojus — tai ne teorija</h3>
+      <p style="font-size:.93rem;margin-bottom:8px">
+        Skudurai, permirkę <b>linų, tungo ar kitu džiūstančiu aliejumi</b>, gali savaime užsiliepsnoti.
+        Oksidacija išskiria šilumą, o suglamžytame skudure ji nespėja išsisklaidyti — temperatūra kyla,
+        kol medžiaga užsidega be jokio išorinio šaltinio. Tai reali dirbtuvių gaisrų priežastis.
+      </p>
+      <ul style="font-size:.93rem;margin:0">
+        <li>Panaudotus skudurus išdžiovinkite pakabintus arba išskleistus ant nedegaus paviršiaus.</li>
+        <li>Arba laikykite juos vandenyje sandariame metaliniame inde, kol išmesite.</li>
+        <li>Niekada nemeskite jų suglamžytų į šiukšliadėžę kartu su popieriumi.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ======================= SAUGA ======================= -->
 <section id="sauga">
   <div class="wrap">
@@ -481,6 +748,34 @@
       </div>
     </div>
 
+    <div class="card" style="margin-bottom:16px">
+      <h3>Eteriniai aliejai ir naminiai gyvūnai</h3>
+      <p style="font-size:.93rem">
+        Katėms trūksta kepenų fermento (gliukuronilo transferazės), kuriuo žmonės ir šunys
+        neutralizuoja eterinių aliejų komponentus. Todėl katėms pavojingi net tokie kiekiai,
+        kurie žmogui visiškai nekenkia — įskaitant difuzoriaus garus uždaroje patalpoje ir
+        aliejaus lašus ant kailio, kurį katė paskui laižo.
+      </p>
+      <div class="table-scroll" style="margin:14px 0 12px">
+        <table style="min-width:460px">
+          <thead><tr><th>Aliejus</th><th>Katėms</th><th>Šunims</th></tr></thead>
+          <tbody>
+            <tr><td>Arbatmedžio</td><td><span class="pill lo">nuodingas</span></td><td><span class="pill lo">grynas — nuodingas</span></td></tr>
+            <tr><td>Citrusiniai, pušies, eglės</td><td><span class="pill lo">nuodingi</span></td><td><span class="pill mid">tik labai praskiesti</span></td></tr>
+            <tr><td>Pipirmėčių, eukalipto</td><td><span class="pill lo">nuodingi</span></td><td><span class="pill mid">atsargiai</span></td></tr>
+            <tr><td>Cinamono, čiobrelių, gvazdikėlių</td><td><span class="pill lo">nuodingi</span></td><td><span class="pill lo">venkite</span></td></tr>
+            <tr><td>Baziniai aliejai (kokosų, alyvuogių)</td><td><span class="pill mid">nedideli kiekiai</span></td><td><span class="pill hi">paprastai saugūs</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.9rem;color:var(--muted);margin:0">
+        Apsinuodijimo požymiai: seilėtekis, vėmimas, drebulys, silpnumas, sunkus kvėpavimas,
+        koordinacijos sutrikimas. Įtarus — nedelsdami kreipkitės į veterinarijos gydytoją ir
+        pasakykite, kuris aliejus buvo naudotas. Difuzorių naudokite tik vėdinamoje patalpoje,
+        iš kurios gyvūnas gali laisvai išeiti.
+      </p>
+    </div>
+
     <div class="card">
       <h3>Kada aliejus nėra sprendimas</h3>
       <p style="font-size:.93rem;margin-bottom:0">
@@ -491,6 +786,43 @@
         nuo kraujo krešėjimo, diabeto ar cholesterolio, apie naujus aliejinius papildus
         (ypač juodgrūdžių, linų, žuvų taukų) verta pasakyti gydytojui.
       </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ŽODYNĖLIS ======================= -->
+<section id="zodynelis">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Terminai</span>
+      <h2>Žodynėlis</h2>
+      <p>Sąvokos, kurios kartojasi ant etikečių, aprašymuose ir šiame žinyne.</p>
+    </div>
+
+    <div class="card">
+      <dl class="glossary">
+        <div><dt>Bazinis (nešantysis) aliejus</dt><dd>Riebalinis aliejus, kuriuo skiedžiami eteriniai aliejai ir kuris pats gali būti naudojamas grynas — jojobos, migdolų, abrikosų.</dd></div>
+        <div><dt>Chemotipas</dt><dd>Tos pačios augalų rūšies atmaina, kurios cheminė sudėtis skiriasi dėl augimo vietos. Rozmarino ar čiobrelių chemotipai gali labai skirtis saugumu ir poveikiu.</dd></div>
+        <div><dt>Dūmų taškas</dt><dd>Temperatūra, kurioje aliejus pradeda skaidytis ir rūkti. Kiekvienas kaitinimas jį šiek tiek sumažina.</dd></div>
+        <div><dt>Emolientas</dt><dd>Medžiaga, minkštinanti ir lyginanti odą, užpildanti tarpus tarp odos ląstelių. Dauguma aliejų yra emolientai.</dd></div>
+        <div><dt>Fototoksiškumas</dt><dd>Medžiagos savybė ant odos sukelti nudegimą ar pigmentaciją veikiant saulei. Būdinga citrusiniams eteriniams aliejams ir jonažolių maceratui.</dd></div>
+        <div><dt>Frakcionavimas</dt><dd>Riebalų rūgščių atskyrimas pagal grandinės ilgį. Taip iš kokosų aliejaus gaunamas MCT — skystas ir praktiškai negendantis.</dd></div>
+        <div><dt>Hidrinimas</dt><dd>Vandenilio prijungimas, kad aliejus taptų kietas. Dalinis hidrinimas sukuria transriebalus, kurių vengiama; visiškas — ne.</dd></div>
+        <div><dt>Humektantas</dt><dd>Medžiaga, traukianti drėgmę (glicerinas, hialurono rūgštis). Aliejai humektantai nėra — jie drėgmę sulaiko, o ne pritraukia.</dd></div>
+        <div><dt>INCI</dt><dd>Tarptautinė kosmetikos sudedamųjų dalių nomenklatūra. Aliejai joje rašomi lotyniškai: <i>Argania Spinosa Kernel Oil</i>, <i>Simmondsia Chinensis Seed Oil</i>.</dd></div>
+        <div><dt>Jodo skaičius</dt><dd>Rodo nesočiųjų jungčių kiekį. Aukštas (virš 130) reiškia džiūstantį aliejų, tinkamą medienai, bet greitai gendantį.</dd></div>
+        <div><dt>Komedogeniškumas</dt><dd>Orientacinis įvertis 0–5, rodantis tikimybę užkimšti poras. Skalė kilusi iš senų bandymų su triušių ausimis — ji nėra tiksli prognozė konkrečiai odai.</dd></div>
+        <div><dt>Laisvosios riebalų rūgštys</dt><dd>Rodiklis, pagal kurį vertinamas alyvuogių aliejaus šviežumas ir klasė. Extra virgin — iki 0,8 %.</dd></div>
+        <div><dt>Maceratas (infuzija)</dt><dd>Aliejus, kuriame kelias savaites išlaikytas augalas. Ne spaudžiamas — medetkų, jonažolių, morkų aliejai yra maceratai.</dd></div>
+        <div><dt>Nesumuilinamoji frakcija</dt><dd>Aliejaus dalis, kuri gaminant muilą nevirsta muilu — sterolių, vitaminų, triterpenų. Ši svieste jos 5–17 %, ir būtent ji laikoma vertingiausia.</dd></div>
+        <div><dt>Okliuzinis</dt><dd>Sudarantis sluoksnį, neleidžiantį drėgmei išgaruoti. Ryškiausias pavyzdys — mineralinis aliejus ir vaškai.</dd></div>
+        <div><dt>Peroksidų skaičius</dt><dd>Oksidacijos matas. Kuo didesnis, tuo aliejus labiau apkartęs. Šviežiame — mažiau nei 10 meq/kg.</dd></div>
+        <div><dt>Polimorfizmas</dt><dd>Riebalų savybė kristalizuotis keliomis formomis. Dėl to netinkamai laikomas šokoladas pabąla, o balzamas tampa grūdėtas.</dd></div>
+        <div><dt>Rafinavimas (RBD)</dt><dd>Neutralizavimas, balinimas ir dezodoravimas. Aliejus tampa bespalvis, beskonis, atsparesnis kaitrai, bet praranda dalį naudingųjų medžiagų.</dd></div>
+        <div><dt>Skvalenas ir skvalanas</dt><dd>Skvalenas yra natūralus, bet nestabilus; skvalanas — jo hidrinta, praktiškai negendanti forma, naudojama kosmetikoje. Amaranto aliejuje yra skvaleno.</dd></div>
+        <div><dt>Šaltas spaudimas</dt><dd>Spaudimas, kurio metu temperatūra neviršija maždaug 40–50 °C. Išsaugoma daugiau vitaminų ir aromato, bet išeiga mažesnė.</dd></div>
+        <div><dt>Transriebalai</dt><dd>Dalinio hidrinimo produktas, siejamas su širdies ir kraujagyslių ligomis. ES jų kiekis maisto produktuose ribojamas.</dd></div>
+      </dl>
     </div>
   </div>
 </section>
@@ -536,6 +868,38 @@
       <div class="acc-body"><p>Ne. Šaltyje dalis riebalų kristalizuojasi, aliejus tampa drumstas arba pusiau kietas. Palaikykite kambario temperatūroje — jis vėl taps skaidrus. Gedimą rodo kvapas, ne drumstumas.</p></div>
     </details>
     <details class="acc">
+      <summary>Ar aliejus gali pakeisti kremą?</summary>
+      <div class="acc-body"><p>Ne visai. Kremas yra aliejaus ir vandens emulsija — jis ir drėkina, ir sulaiko drėgmę. Grynas aliejus vandens neturi: jis tik uždaro tai, kas odoje jau yra. Todėl aliejų tepkite ant drėgnos odos arba po drėkinamuoju serumu. Labai sausu oru vien aliejaus daugeliui neužtenka.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Kuo skiriasi skvalenas ir skvalanas?</summary>
+      <div class="acc-body"><p>Skvalenas yra natūrali medžiaga, esanti augaluose ir žmogaus odos riebaluose, bet ji turi dvigubų jungčių ir todėl greitai oksiduojasi. Skvalanas — ta pati molekulė po hidrinimo: stabili, bekvapė, praktiškai negendanti, todėl naudojama kosmetikoje. Amaranto aliejuje yra būtent skvaleno, kartu su vitaminu E, kuris jį iš dalies saugo.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Kiek lašų eterinio aliejaus dėti į difuzorių?</summary>
+      <div class="acc-body"><p>Įprastai 3–6 lašai 100 ml vandens. Daugiau nereiškia geriau — per stiprus kvapas dažnai sukelia galvos skausmą. Difuzorių junkite su pertraukomis (30–60 min.), vėdinamoje patalpoje. Jei namuose yra kačių, kūdikių ar astma sergančių žmonių — geriau visai atsisakyti.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Ar naminei kosmetikai reikia konservantų?</summary>
+      <div class="acc-body"><p>Priklauso nuo to, ar mišinyje yra vandens. Vien aliejai ir sviestai konservantų nereikalauja — bakterijos juose nedauginasi; pakanka švarių indų ir sausų rankų. Bet vos įpylus vandens, hidrolato ar augalų nuoviro, produktas tampa terpe mikroorganizmams ir be tinkamo konservanto sugenda per kelias dienas, dažnai to nematant. Vitaminas E yra antioksidantas, ne konservantas — jis saugo nuo apkartimo, bet ne nuo bakterijų.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Ar brangus aliejus visada geresnis?</summary>
+      <div class="acc-body"><p>Ne. Kaina dažniausiai atspindi išeigą, rankų darbą ir transportą, o ne veiksmingumą. Migdolų aliejus masažui veikia ne prasčiau už marulos, o saulėgrąžų aliejus riebiai odai — ne prasčiau už brangesnius. Mokėti daugiau prasminga tada, kai aliejus turi kažką unikalaus: amaranto skvaleną, granatų punikos rūgštį, agurklės GLA.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Kiek aliejaus dėti gaminant kremą ar mišinį?</summary>
+      <div class="acc-body"><p>Orientyrai: bazinis aliejus mišinyje — 70–90 %; aktyvus, brangus aliejus (amaranto, erškėtuolių, granatų) — 5–20 %; kviečių gemalų kaip antioksidantas — 5 %; eteriniai aliejai — 0,5–1 % veidui ir 2–3 % kūnui. Kremuose aliejinė fazė paprastai sudaro 15–30 % viso produkto.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Nuo kada aliejus tinka kūdikiui?</summary>
+      <div class="acc-body"><p>Naujagimio odos barjeras dar formuojasi, todėl pirmosiomis savaitėmis geriausia iš viso nieko netepti, nebent rekomenduoja gydytojas. Vėliau saugiausi laikomi saulėgrąžų, migdolų ir abrikosų kauliukų aliejai bei medetkų maceratas — be kvapiklių. Tyrimai rodo, kad alyvuogių aliejus kūdikių odos barjerą gali silpninti. Eterinių aliejų kūdikiams nenaudokite. Esant alergijų šeimoje — pasitarkite su pediatru.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Kaip suprasti, ar aliejus tikras, ar praskiestas?</summary>
+      <div class="acc-body"><p>Namuose tiksliai nenustatysite, bet įtarti galima: per maža kaina brangiam aliejui, per skysta ar per šviesi konsistencija (tamanu turi būti tirštas ir tamsus, tikras kedro — sodrus), silpnas kvapas ten, kur jis turi būti ryškus, ir sudėtis, kurioje po lotynišku pavadinimu eina dar vienas aliejus. Patikimiausi požymiai — konkretus kilmės regionas, išpilstymo data ir tamsi stiklinė pakuotė.</p></div>
+    </details>
+    <details class="acc">
       <summary>Kiek aliejaus per dieną yra normalu?</summary>
       <div class="acc-body"><p>Bendrose mitybos rekomendacijose riebalai sudaro apie 25–35 % dienos energijos, iš jų didžioji dalis turėtų būti nesotieji. Praktiškai tai 2–4 šaukštai pridėtinių aliejų per dieną vidutiniam suaugusiajam, priklausomai nuo viso raciono ir aktyvumo. Aliejus yra kaloringiausias maisto produktas — apie 900 kcal 100 g.</p></div>
     </details>
@@ -544,7 +908,7 @@
 
 <footer>
   <div class="wrap">
-    <p><b>Divine Oils — aliejų žinynas.</b> Pastarasis atnaujinimas: 2026 m.</p>
+    <p><b>Divine Oils — aliejų žinynas.</b> Pastarasis atnaujinimas: 2026 m. rugsėjis. Žinyne — 67 aliejai.</p>
     <p>
       Pateikta informacija yra bendro pobūdžio ir skirta susipažinimui — tai nėra medicininė
       konsultacija, diagnozė ar gydymo rekomendacija. Sudėties ir dūmų taškų reikšmės yra tipiniai

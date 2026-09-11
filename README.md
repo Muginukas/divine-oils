@@ -2,21 +2,28 @@
 
 Statinis vieno puslapio žinynas apie augalinius aliejus lietuvių kalba. Pagrindinis
 dėmesys skiriamas **amaranto (burnočio) sėklų aliejui**, o kartu apžvelgiami visi
-pagrindiniai kulinariniai, kosmetiniai ir eteriniai aliejai — kas juose yra, kur ir
-kaip naudojami.
+pagrindiniai kulinariniai, kosmetiniai, eteriniai ir techniniai aliejai — kas juose
+yra, iš kur jie gaunami, kur ir kaip naudojami.
+
+Žinyne **67 aliejai**, kiekvienas su kilme, veikliosiomis medžiagomis, riebalų rūgščių
+sudėtimi, galiojimo terminu, atsargumo priemonėmis ir pakaitalų sąrašu.
 
 ## Turinys
 
 | Skyrius | Apie ką |
 |---|---|
 | Amaranto sėklų aliejus | Sudėtis, skvalenas, panaudojimas virtuvėje, odai ir plaukams, kaip išsirinkti |
-| Katalogas | 38 aliejai su aprašymais, filtrai pagal paskirtį ir paieška |
+| Katalogas | 67 aliejai, filtrai pagal paskirtį, rikiavimas, paieška, išskleidžiamos detalės |
 | Kaitra | Dūmų taškų lentelė — ką galima kepti, gruzdinti, o ko nekaitinti |
 | Odai | Lentelė pagal odos tipą, komedogeniškumo skalė, tepimo tvarka |
-| Gamyba | Spaudimo ir ekstrakcijos būdai, etikečių žodynėlis, riebalų rūgštys |
+| Receptai | 8 naminių mišinių receptai su proporcijomis + pakaitalų lentelė |
+| Riebalų rūgštys | 13 riebalų rūgščių: kur jų daugiausia ir ką kiekviena duoda |
+| Gamyba | Spaudimo ir ekstrakcijos būdai, etikečių žodynėlis |
 | Laikymas | Kur laikyti, kada į šaldytuvą, kaip atpažinti apkartusį aliejų |
-| Sauga | Eterinių aliejų skiedimo lentelė ir griežtos taisyklės |
-| DUK | Devyni dažniausi klausimai |
+| Namams | Mediena, įrankiai, valymas, sodas + įspėjimas dėl savaiminio užsidegimo |
+| Sauga | Eterinių aliejų skiedimas, griežtos taisyklės, nuodingumas katėms ir šunims |
+| Žodynėlis | 21 terminas — nuo chemotipo iki nesumuilinamosios frakcijos |
+| DUK | 17 dažniausių klausimų |
 
 ## Struktūra
 
@@ -47,20 +54,34 @@ python3 -m http.server 8000
   id: "unikalus-id",
   name: "Aliejaus pavadinimas",
   latin: "Botaninis pavadinimas",
-  cats: ["kulinariniai"],        // kulinariniai | oda | eteriniai | specifiniai
-  star: false,                    // true — prie pavadinimo rodoma žvaigždutė
-  desc: "Trumpas aprašymas.",
-  smoke: "200 °C",               // arba "—", jei netaikoma
-  comedo: "2",                   // arba null
-  fa: "Riebalų rūgščių sudėtis",
+  cats: ["kulinariniai"],     // kulinariniai | oda | eteriniai | specifiniai
+  star: false,                 // true — prie pavadinimo rodoma žvaigždutė
+  price: "€€",                 // € iki ~10 €/l, €€ ~10–40 €/l, €€€ virš 40 €/l
+  desc: "Trumpas aprašymas — rodomas kortelės viršuje.",
+  origin: "Iš kur ir kaip gaunamas.",
+  actives: "Veikliosios medžiagos.",
+  fa: "Riebalų rūgščių sudėtis.",
+  smoke: "200 °C",            // arba "—", jei netaikoma
+  comedo: "2",                // arba null
+  shelf: "12 mėn.",
   tags: ["žyma", "žyma"],
   uses: ["Panaudojimo būdas", "..."],
-  note: "Papildoma pastaba, galimas <b>HTML</b>."
+  kitchen: "Kulinariniai deriniai.",   // neprivaloma
+  care: "Taikymas odai ar plaukams.",  // neprivaloma
+  avoid: "Atsargumo priemonės.",
+  swap: "Kuo pakeisti.",
+  note: "Pastaba, galimas <b>HTML</b>."
 }
 ```
 
+Laukai `desc`, `uses` ir `tags` rodomi kortelėje iš karto; `origin`, `actives`,
+`kitchen`, `care`, `avoid` ir `swap` — išskleidžiamame skyrelyje „Daugiau apie šį
+aliejų“. Laukuose, išskyrus `note`, HTML ekranuojamas; leidžiamos tik `<b>` ir `<i>`
+žymos.
+
 Kategorijų filtrai aprašyti `index.html` faile, `.chips` bloke — pridedant naują
-kategoriją reikia naujo `.chip` mygtuko su atitinkamu `data-cat`.
+kategoriją reikia naujo `.chip` mygtuko su atitinkamu `data-cat`. Rikiavimo variantai
+aprašyti `#oil-sort` sąraše ir `sorted()` funkcijoje `assets/js/app.js`.
 
 ## Duomenų tikslumas
 
