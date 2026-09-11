@@ -8,8 +8,9 @@ yra, iš kur jie gaunami, kur ir kaip naudojami.
 Žinyne **67 aliejai**, kiekvienas su kilme, veikliosiomis medžiagomis, riebalų rūgščių
 sudėtimi, galiojimo terminu, atsargumo priemonėmis ir pakaitalų sąrašu.
 
-Atskiras puslapis **Divine Seed** (`seklos.html`) skirtas sėkloms — **55 pasaulio sėklos**
-su maistine verte, paruošimo technika, daiginimo gidu ir saugos informacija. Puslapiai
+Atskiras puslapis **Divine Seed** (`seklos.html`) skirtas sėkloms — **97 pasaulio sėklos**
+aštuoniose kategorijose (nuo grūdų ir ankštinių iki prieskoninių, daiginamų ir nuodingų)
+su maistine verte, kilme, paruošimo technika, receptais, daiginimo ir sodinimo gidais. Puslapiai
 susieti navigacijos nuorodomis ir dalijasi stiliais bei katalogo varikliu.
 
 ## Turinys
@@ -36,14 +37,18 @@ susieti navigacijos nuorodomis ir dalijasi stiliais bei katalogo varikliu.
 
 | Skyrius | Apie ką |
 |---|---|
-| Kas yra sėkla | Sėklos sandara, kur baigiasi sėkla ir prasideda grūdas |
-| Katalogas | 55 sėklos, 6 kategorijos, filtrai, rikiavimas pagal baltymus |
+| Kas yra sėkla | Sėklos sandara; riba tarp sėklos, grūdo, ankštinės ir riešuto |
+| Katalogas | 97 sėklos, 8 kategorijos, filtrai, rikiavimas pagal baltymų kiekį |
+| Pagal tikslą | Greita lentelė: kurią sėklą rinktis kuriam poreikiui |
 | Maistinė vertė | Palyginamoji lentelė: kalorijos, baltymai, riebalai, skaidulos |
-| Paruošimas | Malimas, mirkymas, skrudinimas, daiginimas + antimaistinės medžiagos |
+| Receptai | 9 mišiniai — dukkah, gomasio, za'atar, panch phoron, sėklų duona ir kt. |
+| Paruošimas | Malimas, mirkymas, skrudinimas, daiginimas; antimaistinės medžiagos |
 | Daiginimas | Žingsniai, laiko lentelė, higienos taisyklės |
+| Pasaulyje | Sėklų tradicijos šešiuose regionuose ir jas jungiantis principas |
+| Sodinimui | Daigumo terminai, laikymas sėjai, stratifikacija, savo sėklų rinkimas |
 | Laikymas | Terminai pagal sėklos tipą, šaldiklio panaudojimas |
 | Sauga | Nuodingos sėklos, saiko reikalaujančios, ES alergenai |
-| DUK | 9 klausimai |
+| DUK | 16 klausimų |
 
 ## Struktūra
 
@@ -56,7 +61,7 @@ assets/js/catalog.js    bendras katalogo variklis: filtrai, paieška, rikiavimas
 assets/js/app.js        aliejų katalogo konfigūracija
 assets/js/seeds-app.js  sėklų katalogo konfigūracija
 assets/data/oils.js     67 aliejai (window.OILS)
-assets/data/seeds.js    55 sėklos (window.SEEDS)
+assets/data/seeds.js    97 sėklos (window.SEEDS)
 ```
 
 Abu katalogai naudoja tą patį `buildCatalog()` variklį — kiekvienas puslapis paduoda
@@ -110,8 +115,8 @@ aliejų“. Laukuose, išskyrus `note`, HTML ekranuojamas; leidžiamos tik `<b>`
 ### Sėklos įrašo pridėjimas
 
 Į `assets/data/seeds.js` masyvą įrašykite objektą su laukais `id`, `name`, `latin`,
-`cats` (`kasdienes` | `pseudograudai` | `prieskoniai` | `riesutines` | `daiginimui` |
-`atsargiai`), `star`, `desc`, `origin`, `nutrition`, `key`, `taste`, `uses`, `prep`,
+`cats` (`kasdienes` | `grudai` | `ankstines` | `pseudograudai` | `prieskoniai` |
+`riesutines` | `daiginimui` | `atsargiai`), `star`, `desc`, `origin`, `nutrition`, `key`, `taste`, `uses`, `prep`,
 `dose`, `avoid`, `swap`, `note`. Kortelėje iš karto rodomi `desc`, `nutrition`, `key`,
 `taste`, `dose` ir `uses`; `origin`, `prep`, `avoid` ir `swap` — išskleidžiamame skyrelyje.
 

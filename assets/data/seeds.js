@@ -1259,5 +1259,973 @@ window.SEEDS = [
     avoid: "<b>Netinkamai paruoštos karčiosios lubinų sėklos sukelia apsinuodijimą alkaloidais</b> — Europoje aprašyta atvejų, kai žmonės ruošė jas patys ir sutrumpino mirkymą. <b>Lubinai — vienas iš 14 ES alergenų</b>, dažna kryžminė alergija su žemės riešutais.",
     swap: "Avinžirniai, edamame pupelės",
     note: "<b>Perspektyvus augalas:</b> lubinuose baltymų daugiau nei sojoje, jie auga vėsiame klimate ir tręšia dirvą azotu — todėl laikomi viena perspektyvesnių vietinių baltymų kultūrų Šiaurės Europai."
+  },
+
+  /* ============================================================
+     GRŪDAI (miglinių šeimos sėklos)
+     ============================================================ */
+  {
+    id: "kviec",
+    name: "Kviečių grūdai",
+    latin: "Triticum aestivum",
+    cats: ["grudai", "daiginimui"],
+    desc: "Labiausiai auginama kultūra pasaulyje pagal plotą. Grūdą sudaro trys dalys, ir nuo to, kiek jų lieka, priklauso viskas — nuo maistinės vertės iki duonos spalvos.",
+    origin: "Derlingasis pusmėnulis, apie 10 000 metų. Kviečių prijaukinimas laikomas viena svarbiausių žemdirbystės pradžios akimirkų.",
+    nutrition: "329 kcal · baltymų 15 g · riebalų 1,9 g · skaidulų 12 g · magnio 126 mg · seleno 71 µg",
+    key: "Glitimas (gliadinas ir gluteninas), krakmolas, B grupės vitaminai, gemale — vitaminas E",
+    taste: "Švelnus, saldokas; sudygę — ryškiai saldesni",
+    uses: [
+      "Miltai duonai, makaronams, kepiniams",
+      "Sveiki grūdai kaip kruopos (kviečių ryžiai, frikė iš žalių)",
+      "Bulguras ir kuskusas — perdirbti kviečių produktai",
+      "Daiginimui — kviečių želmenų sultys (wheatgrass)",
+      "Alaus ir degtinės gamybai"
+    ],
+    prep: "Sveiki grūdai mirkomi per naktį ir verdami 45–60 min. Frikė — jauni žali grūdai, nudeginti ugnimi; ruošiama kaip kruopos per 20 min.",
+    dose: "60–80 g sausų grūdų porcijai",
+    avoid: "<b>Glitimas</b> netinka sergantiems celiakija ir turintiems glitimo jautrumą. Kviečių alergija — viena dažnesnių vaikystėje. Prie glitimo nepriskiriama, bet svarbu: dalis žmonių blogai toleruoja fruktanus kviečiuose (FODMAP).",
+    swap: "Speltos, grikiai, kvinoja, sorgas (beglitimiai)",
+    note: "<b>Trys grūdo dalys:</b> sėlenos (skaidulos ir mineralai), gemalas (riebalai ir vitaminai) ir endospermas (krakmolas). Balti miltai — tik endospermas, todėl jie laikosi metus, o pilno grūdo miltai apkarsta per kelis mėnesius."
+  },
+  {
+    id: "speltos",
+    name: "Speltos (įsrūtis)",
+    latin: "Triticum spelta",
+    cats: ["grudai"],
+    desc: "Senovinė kviečių rūšis su kietu, neatsiskiriančiu apvalkalu. Turi glitimo, bet kitokios struktūros — kai kurie žmonės ją toleruoja geriau.",
+    origin: "Europa ir Artimieji Rytai; bronzos amžiuje buvo pagrindinis grūdas. Vokietijoje (Dinkel) tradicija niekada nenutrūko.",
+    nutrition: "338 kcal · baltymų 15 g · riebalų 2,4 g · skaidulų 11 g · cinko 3,3 mg",
+    key: "Glitimas (trapesnės struktūros), baltymai, magnis, cinkas, niacinas",
+    taste: "Riešutinis, sodresnis ir saldesnis nei paprastų kviečių",
+    uses: [
+      "Duona ir kepiniai — tešla jautresnė, minko trumpiau",
+      "Sveiki grūdai kruopoms ir salotoms",
+      "Speltos makaronai",
+      "Į sriubas ir troškinius"
+    ],
+    prep: "Tešla su speltos miltais minkoma trumpiau ir švelniau — glitimo tinklas trapesnis ir per ilgai minkant suyra. Sveiki grūdai mirkomi ir verdami 45 min.",
+    dose: "60–80 g porcijai",
+    avoid: "<b>Spelta turi glitimo</b> ir sergantiems celiakija griežtai netinka, nepaisant plačiai paplitusio priešingo įsitikinimo.",
+    swap: "Kviečiai, emmeris (dvigrūdis kvietys), kamutas",
+    note: "<b>Kodėl kai kam lengviau:</b> tvirtų įrodymų nėra, bet spėjama, kad speltoje mažiau FODMAP tipo fruktanų ir kitokia glitimo baltymų sudėtis. Celiakijai tai vis tiek neturi reikšmės."
+  },
+  {
+    id: "rugiu",
+    name: "Rugių grūdai",
+    latin: "Secale cereale",
+    cats: ["grudai"],
+    desc: "Lietuvos duonos pagrindas. Atsparūs šalčiui ir prastai dirvai — todėl tapo Šiaurės ir Rytų Europos pagrindiniu grūdu ten, kur kviečiai nederėjo.",
+    origin: "Anatolija; į Šiaurės Europą pateko kaip kviečių pasėlių piktžolė ir ilgainiui buvo prijaukinti atskirai.",
+    nutrition: "338 kcal · baltymų 10 g · riebalų 1,6 g · skaidulų 15 g · magnio 110 mg",
+    key: "Arabinoksilanai (tirpios skaidulos), lignanai, glitimas (mažiau ir silpnesnis nei kviečiuose)",
+    taste: "Sodrus, žemiškas, šiek tiek rūgštokas",
+    uses: [
+      "Ruginė duona — tik su raugu, nes rugiai neturi pakankamai glitimo purumui",
+      "Ruginiai miltai blynams ir meduoliams",
+      "Ruginės kruopos ir dribsniai",
+      "Gira ir ruginio salyklo gėrimai",
+      "Viskio ir degtinės gamybai"
+    ],
+    prep: "Ruginė duona būtinai kepama su raugu — rūgštis leidžia tešlai išlaikyti struktūrą, kurios glitimas vienas neduotų. Todėl tikra ruginė duona visada rūgštoka.",
+    dose: "Kaip duona ar kruopos",
+    avoid: "<b>Turi glitimo</b> — celiakijai netinka. <b>Skalsės (Claviceps purpurea)</b> — grybelis, kadaise sukėlęs masinius apsinuodijimus („šventojo Antano ugnis“); šiuolaikinėje grūdų valymo sistemoje ši rizika kontroliuojama.",
+    swap: "Kviečiai, spelta, miežiai",
+    note: "<b>Lietuviškas kontekstas:</b> ruginė duona su raugu sotina ilgiau nei kvietinė dėl didesnio skaidulų kiekio ir mažesnio glikemijos šuolio. Tai vienas iš nedaugelio atvejų, kai tradicinis produktas atitinka ir šiuolaikines mitybos rekomendacijas."
+  },
+  {
+    id: "mieziu",
+    name: "Miežių grūdai",
+    latin: "Hordeum vulgare",
+    cats: ["grudai", "daiginimui"],
+    desc: "Vienas seniausių kultūrinių grūdų ir rekordininkas pagal skaidulų kiekį. Didžioji dalis pasaulio derliaus keliauja ne į lėkštes, o į salyklą ir pašarą.",
+    origin: "Derlingasis pusmėnulis. Senovės Egipte ir Mesopotamijoje miežiai buvo ir maistas, ir atlyginimo vienetas, ir alaus žaliava.",
+    nutrition: "354 kcal · baltymų 12,5 g · riebalų 2,3 g · skaidulų 17 g · seleno 38 µg",
+    key: "Beta gliukanai (tirpios skaidulos), selenas, manganas, glitimas (hordeinas)",
+    taste: "Riešutinis, sotus, šiek tiek gleivėtas išvirus",
+    uses: [
+      "Perlinės kruopos sriuboms ir troškiniams",
+      "Salyklas — alaus ir viskio gamybai",
+      "Miežinė kava (be kofeino)",
+      "Daiginimui — salyklo gamybos pagrindas",
+      "Į lietuviškus troškinius ir kruopinius vėdarus"
+    ],
+    prep: "Perlinės kruopos (nuvalytos) verdamos 30–40 min. be mirkymo. Nevalytos (hulled) maistingesnės, bet reikia mirkyti per naktį ir virti apie valandą.",
+    dose: "60–80 g sausų kruopų porcijai",
+    avoid: "<b>Turi glitimo</b> — celiakijai netinka, įskaitant salyklą ir alų. Beta gliukanai dideliais kiekiais gali sukelti pilvo pūtimą.",
+    swap: "Perlinės kruopos → grikiai, soros, kvinoja (beglitimiai)",
+    note: "<b>Beta gliukanai</b> yra viena iš nedaugelio skaidulų, kurių poveikis cholesteroliui pripažintas EFSA sveikatingumo teiginiu — tas pats komponentas, dėl kurio vertinamos ir avižos."
+  },
+  {
+    id: "avizu",
+    name: "Avižų grūdai",
+    latin: "Avena sativa",
+    cats: ["grudai", "daiginimui"],
+    desc: "Riebiausias iš įprastų grūdų ir geriausias beta gliukanų šaltinis. Vienintelis grūdas, kuris beveik visada parduodamas su gemalu ir sėlenomis.",
+    origin: "Europa; iš pradžių laikytos piktžole kviečių pasėliuose. Škotijoje ir Skandinavijoje tapo pagrindiniu maistu.",
+    nutrition: "389 kcal · baltymų 17 g · riebalų 6,9 g · skaidulų 11 g · magnio 177 mg",
+    key: "Beta gliukanai, avenantramidai (unikalūs tik avižoms antioksidantai), avenalinas (baltymas)",
+    taste: "Švelnus, kreminis, saldokas",
+    uses: [
+      "Košė, granola, muesli, overnight oats",
+      "Avižinis pienas ir avižinė grietinėlė",
+      "Į kepinius, sausainius, duoną",
+      "Koloidinė avižų vonia — sudirgusiai ir niežtinčiai odai",
+      "Daiginimui (tik nekaitintos, žalios avižos)"
+    ],
+    prep: "Dribsniai virinami 5–10 min. arba užpilami per naktį. Sveiki grūdai (steel-cut) — 25–30 min. Mirkymas su lašeliu rūgšties per naktį sumažina fitino rūgštį.",
+    dose: "40–60 g sausų dribsnių porcijai",
+    avoid: "Avižos natūraliai beglitimės, <b>bet beveik visada perdirbamos tose pačiose gamyklose kaip kviečiai</b> — sergantiems celiakija būtina ieškoti sertifikuotų „gluten free“ avižų. Nedidelė dalis žmonių su celiakija nepakenčia ir aveninų.",
+    swap: "Grikių dribsniai, soros, kvinojos dribsniai",
+    note: "<b>Kodėl avižos kremiškos:</b> beta gliukanai su vandeniu sudaro gelį — todėl košė tirštėja, avižinis pienas atrodo riebus be riebalų, o avižų vonia ramina odą."
+  },
+  {
+    id: "ryziu",
+    name: "Ryžių grūdai",
+    latin: "Oryza sativa",
+    cats: ["grudai"],
+    desc: "Pagrindinis maistas daugiau nei pusei pasaulio gyventojų. Nuo poliravimo laipsnio priklauso ne tik spalva, bet ir maistinė vertė bei galiojimas.",
+    origin: "Kinija ir Indija, apie 9000 metų. Yra tūkstančiai veislių — nuo lipnių sušiams iki aromatingų basmati ir jazminų.",
+    nutrition: "Rudieji: 370 kcal · baltymų 7,9 g · skaidulų 3,5 g · magnio 143 mg. Baltieji: 365 kcal · skaidulų 1,3 g",
+    key: "Krakmolas, B grupės vitaminai (rudieji), gama orizanolis sėlenose, beglitimiai",
+    taste: "Nuo neutralaus iki riešutinio (rudieji) ir ryškiai aromatingo (basmati, jazminų)",
+    uses: [
+      "Garnyras, plovas, rizotas, sušiai, paela",
+      "Ryžių miltai beglitimiams kepiniams ir azijietiškiems makaronams",
+      "Ryžių pienas, ryžių actas, sakė, mirinas",
+      "Ryžių sėlenų aliejus — iš nupoliruoto sluoksnio"
+    ],
+    prep: "<b>Svarbu dėl arseno:</b> gerai nuplaukite ir virkite dideliame vandens kiekyje (1:6), perteklių nupilkite — taip pašalinama iki 50 % neorganinio arseno. Mirkymas per naktį sumažina dar labiau.",
+    dose: "60–80 g sausų ryžių porcijai",
+    avoid: "<b>Ryžiai kaupia neorganinį arseną</b> iš dirvos ir vandens labiau nei kiti grūdai — daugiausia rudieji, nes jis kaupiasi sėlenose. Mažiems vaikams nerekomenduojama ryžių gėrimų kaip pieno pakaitalo. Įvairinkite kruopas, nevalgykite ryžių kiekvieną dieną.",
+    swap: "Kvinoja, grikiai, soros, miežiai",
+    note: "<b>Rudieji ar baltieji:</b> rudieji maistingesni, bet turi daugiau arseno ir fitino rūgšties ir genda per 6 mėn. (dėl riebalų sėlenose). Baltieji laikosi metų metus. Protingiausia — įvairinti."
+  },
+  {
+    id: "kukuruzu",
+    name: "Kukurūzų grūdai",
+    latin: "Zea mays",
+    cats: ["grudai"],
+    desc: "Amerikos civilizacijų pagrindas ir šiandien daugiausia pasaulyje užauginamas grūdas. Su juo susijusi viena svarbiausių maisto ruošimo pamokų istorijoje.",
+    origin: "Meksika, prijaukinti iš teosintės apie 9000 metų. Šiuolaikinis kukurūzas be žmogaus pagalbos net negali pasidauginti — burbuolė neišbarsto sėklų.",
+    nutrition: "365 kcal · baltymų 9,4 g · riebalų 4,7 g · skaidulų 7,3 g · beglitimiai",
+    key: "Krakmolas, zeaksantinas ir liuteinas (geltonuose), niacinas (surištas, neprieinamas be apdorojimo)",
+    taste: "Saldokas, sviestinis",
+    uses: [
+      "Polenta, mamalyga, grits — malti grūdai",
+      "Tortilijos ir arepos (iš nikstamalizuotų grūdų)",
+      "Spraginti kukurūzai — speciali veislė su kietu apvalkalu",
+      "Kukurūzų krakmolas, sirupas, aliejus",
+      "Bourbon viskio gamyba"
+    ],
+    prep: "<b>Nikstamalizacija</b> — grūdų virimas su kalkėmis ar šarmu. Ši indėnų technika atlaisvina niaciną, padidina kalcio kiekį ir leidžia tešlai sulipti. Būtent taip gaminama masa tortilijoms.",
+    dose: "Kaip kruopos ar miltai",
+    avoid: "<b>Istorinė pamoka:</b> kai kukurūzai buvo perimti Europoje ir JAV pietuose be nikstamalizacijos, kilo pelagros epidemijos — niacino trūkumo liga, nusinešusi šimtus tūkstančių gyvybių. Pats grūdas niacino turi, bet neprieinamos formos.",
+    swap: "Sorgas, soros, ryžiai (beglitimiai)",
+    note: "<b>Kodėl spraginti kukurūzai sprogsta:</b> grūdo viduje esanti drėgmė kaitinama virsta garais, o kietas apvalkalas neleidžia jiems ištrūkti, kol slėgis nesuplėšo grūdo iš vidaus. Tai veikia tik su Zea mays everta veisle."
+  },
+  {
+    id: "sorgo",
+    name: "Sorgo grūdai",
+    latin: "Sorghum bicolor",
+    cats: ["grudai"],
+    desc: "Penktas pagal svarbą pasaulio grūdas ir vienas atspariausių sausrai. Beglitimis, todėl vis dažniau naudojamas Vakaruose.",
+    origin: "Šiaurės Rytų Afrika, apie 5000 metų. Sacharos pietuose iki šiol vienas pagrindinių maisto šaltinių.",
+    nutrition: "329 kcal · baltymų 10,6 g · riebalų 3,5 g · skaidulų 6,7 g · geležies 3,4 mg",
+    key: "Beglitimis, taninai (tamsiose veislėse), rezistentinis krakmolas, polifenoliai",
+    taste: "Švelnus, žemiškas, šiek tiek riešutinis",
+    uses: [
+      "Košė ir kruopos (Afrikos ugali, injera priedas)",
+      "Beglitimiai miltai duonai ir kepiniams",
+      "Sprogdinamas kaip mini spraginti kukurūzai",
+      "Sorgo sirupas (JAV pietuose)",
+      "Alaus gamyba Afrikoje"
+    ],
+    prep: "Virkite 1:3 apie 50–60 min. arba sprogdinkite sausoje keptuvėje. Miltai geriausiai veikia mišinyje su kitais beglitimiais.",
+    dose: "60–80 g sausų grūdų porcijai",
+    avoid: "Tamsiose veislėse daug taninų — jie kartoki ir mažina baltymų bei geležies pasisavinimą. Šviesios veislės jų beveik neturi.",
+    swap: "Soros, kvinoja, ryžiai",
+    note: "<b>Klimato atsparumas:</b> sorgui reikia maždaug trečdaliu mažiau vandens nei kukurūzams, todėl jis laikomas vienu perspektyviausių grūdų šylančiame klimate."
+  },
+  {
+    id: "laukiniuryziu",
+    name: "Laukiniai ryžiai",
+    latin: "Zizania palustris",
+    cats: ["grudai"],
+    desc: "Ne ryžiai ir net ne ta pati gentis — tai Šiaurės Amerikos vandens žolės sėklos, tradiciškai renkamos iš kanojų. Ilgos, blizgančiai juodos.",
+    origin: "Didžiųjų ežerų regionas; odžibvė ir kitos indėnų tautos jas renka iki šiol, lenkdamos stiebus virš kanojos ir kuldamos lazdelėmis.",
+    nutrition: "357 kcal · baltymų 14,7 g · riebalų 1,1 g · skaidulų 6,2 g · cinko 6 mg",
+    key: "Baltymai (daugiau nei įprastuose ryžiuose), cinkas, folatai, beglitimiai",
+    taste: "Ryškiai riešutinis, arbatos ir dūmo nata",
+    uses: [
+      "Į plovus ir salotas, dažnai maišomi su rudaisiais ryžiais",
+      "Į paukštienos įdarus (Šiaurės Amerikos tradicija)",
+      "Į sriubas",
+      "Sprogdinami kaip užkandis"
+    ],
+    prep: "Virkite 1:3 apie 45–50 min., kol grūdai atsivers ir parodys baltą vidų. Neišvirę lieka kieti kaip vielos.",
+    dose: "50–70 g sausų grūdų porcijai",
+    avoid: "Brangūs. Rinkoje daug pigesnių, dirbtinai auginamų (paddy) laukinių ryžių — jie tamsesni ir kietesni nei tikrieji, renkami rankomis.",
+    swap: "Rudieji ryžiai, miežiai, farro",
+    note: "<b>Kultūrinis kontekstas:</b> odžibvėms manoomin yra ne tik maistas, bet ir šventas augalas, minimas jų migracijos pranašystėje. Rankomis renkami laukiniai ryžiai turi atskirą apsaugotą statusą Minesotoje."
+  },
+  {
+    id: "fonio",
+    name: "Fonio",
+    latin: "Digitaria exilis",
+    cats: ["grudai"],
+    desc: "Mažiausias Afrikos grūdas ir vienas greičiausiai augančių — derlių duoda per 6–8 savaites. Vakarų Afrikoje laikomas seniausiai auginamu grūdu.",
+    origin: "Vakarų Afrika (Malis, Gvinėja, Senegalas, Burkina Fasas). Bambarų patarlė sako, kad fonio niekada nemeluoja — jis dera net prasčiausiais metais.",
+    nutrition: "~370 kcal · baltymų 8–9 g · riebalų 1–4 g · beglitimis · daug metionino ir cistino",
+    key: "Metioninas ir cistinas (aminorūgštys, kurių trūksta daugelyje grūdų), beglitimis, žemas glikemijos indeksas",
+    taste: "Labai švelnus, riešutinis, tekstūra primena kuskusą",
+    uses: [
+      "Kaip kuskusas — garinamas ar užpilamas verdančiu vandeniu",
+      "Košė pusryčiams",
+      "Į salotas vietoj bulguro",
+      "Beglitimiai miltai kepiniams",
+      "Tradiciškai vestuvių ir švenčių patiekaluose"
+    ],
+    prep: "Greičiausiai ruošiamas grūdas: užpilkite verdančiu vandeniu 1:2, uždenkite ir palaukite 5 min. Prieš tai gerai nuplaukite — grūdas labai smulkus.",
+    dose: "50–70 g sausų grūdų porcijai",
+    avoid: "Europoje randamas retai ir brangus. Dėl smulkumo sunku išvalyti — pirkite iš patikimų tiekėjų.",
+    swap: "Kuskusas, soros, kvinoja",
+    note: "<b>Kodėl verta žinoti:</b> fonio turi tų aminorūgščių, kurių stinga kviečiuose ir ryžiuose, auga smėlėtoje dirvoje be trąšų ir yra beglitimis — todėl laikomas vienu perspektyviausių „pamirštų“ grūdų."
+  },
+
+  /* ============================================================
+     ANKŠTINĖS SĖKLOS
+     ============================================================ */
+  {
+    id: "lesiu",
+    name: "Lęšiai",
+    latin: "Lens culinaris",
+    cats: ["ankstines", "daiginimui"],
+    desc: "Vienos seniausių prijaukintų sėklų ir praktiškiausios iš visų ankštinių — nereikia mirkyti, verda greitai, o lektinų problema jiems negalioja.",
+    origin: "Artimieji Rytai, apie 11 000 metų. Lęšiai minimi Biblijoje — už jų lėkštę Ezavas pardavė pirmagimio teises.",
+    nutrition: "352 kcal · baltymų 25 g · riebalų 1,1 g · skaidulų 11 g · geležies 6,5 mg · folatų 479 µg",
+    key: "Baltymai, geležis, folatai, rezistentinis krakmolas, polifenoliai apvalkale",
+    taste: "Žemiškas; raudonieji — švelnesni ir saldesni, žalieji ir juodieji — tvirtesni",
+    uses: [
+      "Sriubos ir troškiniai (dal, mercimek)",
+      "Salotos su žaliaisiais ar juodaisiais (beluga) lęšiais",
+      "Kotletai ir mėsos pakaitalai",
+      "Daiginimui — paruošta per 2–3 paras",
+      "Lęšių miltai beglitimiams makaronams"
+    ],
+    prep: "<b>Mirkyti nebūtina.</b> Raudonieji lūžta ir sutrinta virsta tyrele per 15 min.; žalieji ir juodieji išlaiko formą per 25–30 min. Druską dėkite pabaigoje — anksti įberta lėtina minkštėjimą.",
+    dose: "60–80 g sausų lęšių porcijai",
+    avoid: "Dėl skaidulų gausos gali pūsti pilvą — pradėkite nuo mažesnių porcijų. Fitino rūgštis mažina geležies pasisavinimą; padeda vitamino C šaltinis tame pačiame patiekale (citrina, pomidorai).",
+    swap: "Skaldyti žirniai, avinžirniai, mung pupelės",
+    note: "<b>Geriausias startas:</b> jei tik pradedate valgyti daugiau ankštinių, raudonieji lęšiai yra lengviausias pasirinkimas — nereikia planuoti iš vakaro, verda 15 min. ir yra švelniausi žarnynui."
+  },
+  {
+    id: "avinzirniu",
+    name: "Avinžirniai",
+    latin: "Cicer arietinum",
+    cats: ["ankstines", "daiginimui"],
+    desc: "Humuso, falafelio ir aquafabos šaltinis. Vienas universaliausių ankštinių — valgomi ir kaip pagrindinis patiekalas, ir kaip užkandis, ir kaip miltai.",
+    origin: "Anatolija, apie 9000 metų. Kabuli tipas (didesni, šviesūs) paplitęs Viduržemio jūros regione, desi (mažesni, tamsūs) — Indijoje.",
+    nutrition: "378 kcal · baltymų 20 g · riebalų 6 g · skaidulų 12 g · folatų 557 µg · geležies 4,3 mg",
+    key: "Baltymai, folatai, manganas, rezistentinis krakmolas, saponinai",
+    taste: "Riešutinis, kreminis",
+    uses: [
+      "Humusas, falafelis, channa masala",
+      "Skrudinti su prieskoniais — traškus užkandis",
+      "Avinžirnių (besan) miltai — pakoros, socca, farinata",
+      "Aquafaba — konservų skystis, plakamas vietoj kiaušinių baltymų",
+      "Daiginimui ir į salotas"
+    ],
+    prep: "Mirkykite 8–12 val. su žiupsneliu sodos (suminkština apvalkalą), virkite 1–1,5 val. Falafeliui naudojami <b>mirkyti, bet neišvirti</b> avinžirniai — iš virtų jis subyrės.",
+    dose: "60–80 g sausų avinžirnių porcijai",
+    avoid: "Pūtimas — dažniausias nusiskundimas; padeda mirkymas keičiant vandenį ir kmynų ar ajwaino įdėjimas. Reta, bet egzistuojanti avinžirnių alergija.",
+    swap: "Baltosios pupelės, lęšiai",
+    note: "<b>Aquafaba</b> — atsitiktinis 2014 m. atradimas: avinžirnių virimo skystis plakamas sudaro putas kaip kiaušinių baltymai. Iš jo gaminami veganiški merengai ir majonezas."
+  },
+  {
+    id: "mung",
+    name: "Mung pupelės",
+    latin: "Vigna radiata",
+    cats: ["ankstines", "daiginimui"],
+    desc: "Mažos žalios pupelės, iš kurių auginami tie stori balti daigai azijietiškuose patiekaluose. Vienos lengviausiai virškinamų ankštinių.",
+    origin: "Indija; Azijoje auginamos tūkstantmečius. Ajurvedoje laikomos lengviausiai virškinamu ankštiniu ir duodamos sveikstantiems.",
+    nutrition: "347 kcal · baltymų 24 g · riebalų 1,2 g · skaidulų 16 g · folatų 625 µg",
+    key: "Baltymai, folatai, magnis, vitexinas ir izovitexinas (antioksidantai)",
+    taste: "Švelnus, saldokas; daigai — traškūs ir gaivūs",
+    uses: [
+      "Daigai — į wok, salotas, pho, vasarinius vyniotinius",
+      "Kitchari — ajurvedinis ryžių ir mung patiekalas",
+      "Dal ir sriubos",
+      "Mung miltai azijietiškiems makaronams (stiklo makaronai)",
+      "Saldūs patiekalai Rytų Azijoje"
+    ],
+    prep: "Sveikos pupelės mirkomos 4–6 val. ir verdamos 30–40 min.; skaldytos (moong dal) — be mirkymo per 20 min. <b>Daiginimas:</b> mirkyti 8 val., plauti 2 k./d., paruošti per 3–4 paras.",
+    dose: "60–80 g sausų pupelių porcijai; daigų — sauja",
+    avoid: "Daigams galioja ta pati bakterijų rizika kaip ir kitiems — plaukite reguliariai. Silpno imuniteto žmonėms geriau trumpai pakaitinti.",
+    swap: "Lęšiai, adzuki, skaldyti žirniai",
+    note: "<b>Kodėl daigai tokie stori:</b> mung daigai auginami tamsoje su slėgiu (tradiciškai — po akmeniu), todėl jie stori ir balti. Šviesoje užaugę būtų ploni ir žali."
+  },
+  {
+    id: "adzuki",
+    name: "Adzuki pupelės",
+    latin: "Vigna angularis",
+    cats: ["ankstines", "daiginimui"],
+    desc: "Mažos tamsiai raudonos pupelės, Rytų Azijoje naudojamos daugiausia saldumynuose — iš jų gaminama saldi pasta anko, japoniškų desertų pagrindas.",
+    origin: "Rytų Azija. Japonijoje raudona spalva siejama su sėkme, todėl adzuki patiekalai gaminami per šventes (sekihan — ryžiai su adzuki).",
+    nutrition: "329 kcal · baltymų 20 g · riebalų 0,5 g · skaidulų 13 g · kalio 1254 mg",
+    key: "Baltymai, kalis, folatai, proantocianidinai apvalkale",
+    taste: "Saldokas, riešutinis — netipiškai švelnus ankštiniams",
+    uses: [
+      "Anko — saldi pasta mochi, dorayaki, taiyaki įdarui",
+      "Sekihan — šventiniai ryžiai su adzuki",
+      "Į sriubas ir troškinius",
+      "Daiginimui",
+      "Sumaltos — į beglitimius kepinius"
+    ],
+    prep: "Mirkykite 4–8 val., virkite 45–60 min. Saldžiai pastai virkite iki visiško minkštumo, sutrinkite su cukrumi ir tirštinkite ant silpnos ugnies.",
+    dose: "60–80 g sausų pupelių porcijai",
+    avoid: "Kaip ir kitoms pupelėms — reikia pakankamo virimo. Pūtimą mažina mirkymas keičiant vandenį.",
+    swap: "Raudonosios pupelės (kitoks skonis), mung pupelės",
+    note: "<b>Netikėta savybė:</b> adzuki turi vieną didžiausių kalio kiekių tarp ankštinių — 100 g sausų pupelių padengia apie trečdalį paros normos."
+  },
+  {
+    id: "juodpupeliu",
+    name: "Juodosios pupelės",
+    latin: "Phaseolus vulgaris",
+    cats: ["ankstines"],
+    desc: "Lotynų Amerikos virtuvės pagrindas. Tamsus apvalkalas turi tų pačių antocianinų, kaip mėlynės — todėl virimo vanduo nusidažo violetiniu.",
+    origin: "Centrinė ir Pietų Amerika, auginamos apie 7000 metų. Brazilijoje feijoada, Kuboje ir Meksikoje — kasdienis patiekalas su ryžiais.",
+    nutrition: "341 kcal · baltymų 21 g · riebalų 1,4 g · skaidulų 15 g · folatų 444 µg",
+    key: "Antocianinai, rezistentinis krakmolas, baltymai, molibdenas",
+    taste: "Sodrus, kreminis, šiek tiek saldokas",
+    uses: [
+      "Su ryžiais — klasikinis pilnas baltymų derinys",
+      "Feijoada, čili, burritos, tako įdarai",
+      "Pupelių užtepėlės ir tyrelės",
+      "Į salotas ir sriubas",
+      "Į šokoladinius kepinius (netikėtai gerai veikia)"
+    ],
+    prep: "Mirkykite 8 val., <b>virkite bent 10 min. stipriai verdančiame vandenyje</b>, tada dar 45–60 min. Taip sunaikinamas fitohemagliutininas.",
+    dose: "60–80 g sausų pupelių porcijai",
+    avoid: "<b>Kaip ir raudonosios — žalios ar neišvirtos toksiškos.</b> Lėtpuodyje žemoje temperatūroje toksinas gali net sustiprėti; jame dėkite jau išvirtas. Konservuotos — saugios.",
+    swap: "Raudonosios pupelės, pinto pupelės, lęšiai",
+    note: "<b>Ryžiai su pupelėmis</b> — vienas seniausių mitybos sprendimų pasaulyje: grūduose trūksta lizino, ankštiniuose — metionino, o kartu jie sudaro pilnavertį baltymą. Tą patį principą randame ir Indijoje (dal su ryžiais), ir Artimuosiuose Rytuose (humusas su pita)."
+  },
+  {
+    id: "sojos",
+    name: "Sojos pupelės",
+    latin: "Glycine max",
+    cats: ["ankstines", "daiginimui"],
+    desc: "Baltymingiausia paplitusi ankštinė sėkla ir vienintelė augalinė, kurios baltymas kokybe prilygsta gyvūniniam. Kartu — viena prieštaringiausiai vertinamų.",
+    origin: "Rytų Azija, apie 3000 metų. Fermentuoti produktai (misas, tempė, natto, sojų padažas) senesni už tofu.",
+    nutrition: "446 kcal · baltymų 36 g · riebalų 20 g · skaidulų 9 g · geležies 15,7 mg · kalcio 277 mg",
+    key: "Izoflavonai (genisteinas, daidzeinas), pilnavertis baltymas, lecitinas, fitino rūgštis",
+    taste: "Pupelinis; fermentuotų produktų — sodrus umami",
+    uses: [
+      "Tofu, tempė, sojų pienas, misas, sojų padažas, natto",
+      "Edamame — jaunos, garuose virtos ankštys",
+      "Sojų aliejus ir lecitinas maisto pramonėje",
+      "Daiginimui",
+      "Tekstūruoti sojų baltymai mėsos pakaitaluose"
+    ],
+    prep: "Sausos sojos mirkomos 12 val. ir verdamos 2–3 val. — ilgiausiai iš visų ankštinių. Praktiškiau naudoti paruoštus produktus (tofu, tempę).",
+    dose: "1–2 porcijos sojų produktų per dieną",
+    avoid: "<b>Apie izoflavonus:</b> tai fitoestrogenai, ir dėl jų kilo daug baimių. Didelės apžvalgos nerodo neigiamo poveikio vyrų hormonams ar krūties vėžio rizikai įprastais kiekiais; dalis duomenų net rodo naudą. Vis dėlto turintiems skydliaukės sutrikimų ir vartojantiems levotiroksiną sojos produktus verta valgyti atokiau nuo vaisto. <b>Soja — vienas iš 14 ES alergenų.</b>",
+    swap: "Lubinai, avinžirniai, kanapių sėklos (baltymams)",
+    note: "<b>Fermentacija keičia daug ką:</b> tempė, misas ir natto turi mažiau fitino rūgšties, geriau virškinami, o natto yra vienas turtingiausių vitamino K2 šaltinių maiste."
+  },
+  {
+    id: "pupos",
+    name: "Plačiosios pupos (pupelės)",
+    latin: "Vicia faba",
+    cats: ["ankstines", "atsargiai"],
+    desc: "Seniausia Europos ankštinė — Lietuvoje augintos šimtmečius, kol jas išstūmė bulvės. Vienintelė ankštinė, galinti sukelti ūmią ligą tam tikrą genetinį bruožą turintiems žmonėms.",
+    origin: "Artimieji Rytai ir Viduržemio jūros regionas; Europoje iki Amerikos atradimo buvo pagrindinė ankštinė.",
+    nutrition: "341 kcal · baltymų 26 g · riebalų 1,5 g · skaidulų 25 g · folatų 423 µg",
+    key: "Baltymai, L-dopa (dopamino pirmtakas), vicinas ir konvicinas",
+    taste: "Sodrus, žemiškas, šiek tiek kartokas",
+    uses: [
+      "Ful medames — Egipto nacionalinis pusryčių patiekalas",
+      "Jaunos žalios pupos garuose su sviestu",
+      "Į sriubas ir troškinius (lietuviška tradicija)",
+      "Falafelis Egipte gaminamas iš pupų, ne avinžirnių",
+      "Žaliajai trąšai ir azoto fiksavimui"
+    ],
+    prep: "Sausos mirkomos 12 val. ir verdamos 1–1,5 val.; storą apvalkalą po virimo galima nulupti. Jaunos žalios — verdamos 3–5 min.",
+    dose: "60–80 g sausų pupų porcijai",
+    avoid: "<b>Favizmas:</b> žmonėms su paveldimu G6PD fermento trūkumu pupos sukelia ūmų raudonųjų kraujo kūnelių irimą — būklę, reikalaujančią skubios pagalbos. Tai dažna Viduržemio jūros, Artimųjų Rytų ir Afrikos kilmės populiacijose. Jei šeimoje būta tokių reakcijų — pupų nevalgykite ir pasitikrinkite.",
+    swap: "Lęšiai, avinžirniai, baltosios pupelės",
+    note: "<b>Istorinis atgarsis:</b> senovės graikų filosofas Pitagoras esą draudė savo sekėjams valgyti pupas. Viena iš hipotezių — kad regione paplitęs favizmas ir buvo tikroji draudimo priežastis."
+  },
+  {
+    id: "zemesriesutu",
+    name: "Žemės riešutai",
+    latin: "Arachis hypogaea",
+    cats: ["ankstines"],
+    desc: "Ne riešutas, o ankštinė sėkla, bręstanti po žeme — augalas pats įkiša apvaisintą žiedą į dirvą. Vienas stipriausių maisto alergenų.",
+    origin: "Pietų Amerika (Bolivija, Peru). Į Afriką ir Aziją pateko su portugalais ir ten tapo svarbia kultūra.",
+    nutrition: "567 kcal · baltymų 26 g · riebalų 49 g · skaidulų 8,5 g · niacino 12 mg",
+    key: "Oleino ir linolo rūgštys, niacinas, rezveratrolis, biotinas, arginino",
+    taste: "Sodrus, riešutinis; skrudintų — ryškesnis",
+    uses: [
+      "Užkandis — skrudinti ar virti (JAV pietuose)",
+      "Žemės riešutų sviestas",
+      "Į Vakarų Afrikos ir Azijos padažus (satay, maafe)",
+      "Žemės riešutų aliejus gruzdinimui",
+      "Į saldumynus ir batonėlius"
+    ],
+    prep: "Skrudinkite 160 °C 15–20 min. Namuose gaminamam sviestui — blenderiuokite skrudintus riešutus 5–10 min., kol riebalai išsiskirs ir masė taps kreminė.",
+    dose: "Sauja (30 g)",
+    avoid: "<b>Viena dažniausių ir sunkiausių maisto alergijų</b> — gali sukelti anafilaksiją. Šiuolaikinės rekomendacijos ragina alergenus įvesti kūdikiams anksti (nuo 4–6 mėn., trintus), nes tai mažina alergijos riziką. <b>Aflatoksinai:</b> netinkamai laikomi žemės riešutai gali būti užteršti pelėsio toksinais — nevalgykite pelėsiuotų ar kartokų.",
+    swap: "Saulėgrąžų sėklų sviestas (alergiškiems), migdolai",
+    note: "<b>Botanikos smulkmena:</b> žemės riešutas — vienintelė plačiai vartojama sėkla, kuri bręsta po žeme. Po apvaisinimo žiedkotis pailgėja ir įsminga į dirvą, kur ir susiformuoja ankštis."
+  },
+
+  /* ============================================================
+     RIEŠUTINĖS — papildomos
+     ============================================================ */
+  {
+    id: "pistaciju",
+    name: "Pistacijos",
+    latin: "Pistacia vera",
+    cats: ["riesutines"],
+    desc: "Vienintelis žalias riešutas — spalvą duoda chlorofilas ir karotinoidai. Botaniškai tai kaulavaisio sėkla, kaip ir migdolas.",
+    origin: "Iranas ir Centrinė Azija, auginamos apie 9000 metų. Iranas ir JAV (Kalifornija) — didžiausi gamintojai; Sicilijos Bronte pistacijos turi saugomą kilmės nuorodą.",
+    nutrition: "560 kcal · baltymų 20 g · riebalų 45 g · skaidulų 10 g · vitamino B6 1,7 mg · kalio 1025 mg",
+    key: "Liuteinas ir zeaksantinas (akims), vitaminas B6, kalis, fitosteroliai",
+    taste: "Švelnus, saldokas, sviestinis",
+    uses: [
+      "Užkandis su kevalu — atsivėręs kevalas rodo prinokimą",
+      "Baklava, halva, pistacijų ledai, cannoli",
+      "Į paštetus ir dešras",
+      "Maltos — mėsos ar žuvies apkepui",
+      "Pistacijų pasta ir aliejus"
+    ],
+    prep: "Valgomos žalios arba skrudintos. Deserto pastai — nulupkite plonytę violetinę odelę (nuplikinę verdančiu vandeniu), kitaip pasta bus rusva, ne žalia.",
+    dose: "Sauja (30 g, apie 49 pistacijos)",
+    avoid: "Riešutų alergija. <b>Aflatoksinai</b> — pistacijos yra viena rizikingesnių kultūrų; nevalgykite kartokų ar su tamsiomis dėmelėmis. Sūdytos turi daug natrio.",
+    swap: "Lazdyno riešutai, pinijų riešutai",
+    note: "<b>Kodėl kevalas atsivėręs:</b> bręstant branduolys išauga tiek, kad suplėšo kevalą. Tai natūralu ir yra prinokimo požymis — o ne trūkumas."
+  },
+  {
+    id: "graikiniu",
+    name: "Graikiniai riešutai",
+    latin: "Juglans regia",
+    cats: ["riesutines"],
+    desc: "Vienintelis riešutas su reikšmingu omega-3 kiekiu. Branduolys stebėtinai primena smegenis — sutapimas, kurį viduramžių gydytojai laikė ženklu.",
+    origin: "Persija ir Centrinė Azija. Prancūzijos Périgord ir Grenoblio regionai turi saugomas kilmės nuorodas.",
+    nutrition: "654 kcal · baltymų 15 g · riebalų 65 g · skaidulų 6,7 g · ALA 9 g · vario 1,6 mg",
+    key: "Alfa linoleno rūgštis (~9 g — daugiausia tarp riešutų), elago rūgštis, melatoninas, varis",
+    taste: "Sodrus, riešutinis; odelė kartoka nuo taninų",
+    uses: [
+      "Užkandis, į salotas su ožkos sūriu ir kriaušėmis",
+      "Į kepinius, pyragus, riešutinius vyniotinius",
+      "Maltos — į padažus (gruziniška virtuvė, satsivi)",
+      "Graikinių riešutų aliejus salotoms",
+      "Žalių riešutų likeris (nocino)"
+    ],
+    prep: "Skrudinkite 160 °C 8–10 min., kad sumažėtų taninų kartumas. Laikykite šaldytuve — dėl omega-3 apkarsta greičiausiai iš visų riešutų.",
+    dose: "Sauja (30 g, apie 14 puselių)",
+    avoid: "Riešutų alergija. Greitai apkarsta — kartokas, „dažų“ kvapo riešutas jau netinkamas. Juglonas riešutmedžio lapuose ir žievėje slopina kitų augalų augimą (todėl po graikiniu riešutmedžiu mažai kas auga).",
+    swap: "Pekano riešutai (panaši forma), lazdyno riešutai",
+    note: "<b>Omega-3 kontekstas:</b> 30 g graikinių riešutų duoda apie 2,5 g ALA — tai jau viršija paros rekomendaciją. Iš įprastų riešutų tai vienintelis reikšmingas šaltinis."
+  },
+  {
+    id: "lazdyno",
+    name: "Lazdyno riešutai",
+    latin: "Corylus avellana",
+    cats: ["riesutines"],
+    desc: "Vieni iš nedaugelio tikrųjų riešutų botaniškai (kartu su kaštonais ir gilėmis). Lietuvoje auga laukiniai — lazdynas yra vietinis miško augalas.",
+    origin: "Europa ir Vakarų Azija. Turkija užaugina apie 70 % pasaulio derliaus; Italijos Pjemontas garsėja tortomis ir gianduja.",
+    nutrition: "628 kcal · baltymų 15 g · riebalų 61 g · skaidulų 10 g · vitamino E 15 mg · mangano 6,2 mg",
+    key: "Oleino rūgštis, vitaminas E, manganas, folatai, fitosteroliai",
+    taste: "Saldokas, ryškiai riešutinis; skrudintų — kur kas stipresnis",
+    uses: [
+      "Gianduja ir riešutiniai šokoladiniai kremai",
+      "Į tortas, sausainius, praline",
+      "Skrudinti ir malti — į padažus ir apkepus",
+      "Lazdyno riešutų aliejus — salotoms ir kosmetikai",
+      "Lietuvoje — prisirenkami laukiniai rugpjūtį"
+    ],
+    prep: "Skrudinkite 170 °C 12–15 min., tada suvyniokite į rankšluostį ir patrinkite — rudos odelės nulups pačios. Tai svarbu, nes jos kartokos.",
+    dose: "Sauja (30 g, apie 20 riešutų)",
+    avoid: "Riešutų alergija; lazdyno alergija dažnai kryžminė su beržo žiedadulkėmis (burnos alergijos sindromas).",
+    swap: "Migdolai, graikiniai riešutai",
+    note: "<b>Laukiniai ar auginti:</b> lietuviški laukiniai lazdyno riešutai mažesni, bet aromatingesni. Renkant svarbu, kad kevalas būtų pilnas ir sunkus — tuščias skamba kratomas."
+  },
+  {
+    id: "makadamijos",
+    name: "Makadamijos riešutai",
+    latin: "Macadamia integrifolia",
+    cats: ["riesutines", "atsargiai"],
+    desc: "Riebiausias riešutas pasaulyje — 76 % riebalų. Vienintelis plačiai auginamas maistinis augalas, kilęs iš Australijos.",
+    origin: "Australijos rytinės pakrantės lietaus miškai; aborigenams tai buvo svarbus maistas. Komercinės plantacijos pirmiausia įkurtos Havajuose.",
+    nutrition: "718 kcal · baltymų 7,9 g · riebalų 76 g · skaidulų 8,6 g · mangano 4,1 mg",
+    key: "Palmitoleino rūgštis (omega-7, ~20 %), oleino rūgštis, manganas, tiaminas",
+    taste: "Sviestinis, kreminis, saldokas — beveik desertinis",
+    uses: [
+      "Užkandis, į sausainius su baltu šokoladu",
+      "Į salotas ir žuvies apkepus",
+      "Makadamijos aliejus — kepimui ir kosmetikai",
+      "Veganiškiems sūriams ir grietinėlei"
+    ],
+    prep: "Kevalas — kiečiausias iš visų riešutų, reikia specialaus riešutų spaustuko; parduodami dažniausiai jau lukštenti. Skrudinkite švelniai, 140 °C 10 min.",
+    dose: "Sauja (30 g, apie 10–12 riešutų)",
+    avoid: "<b>Nuodingi šunims:</b> net keli riešutai sukelia silpnumą, drebulį, vėmimą ir karščiavimą. Toksino mechanizmas iki galo nežinomas, bet reakcija gerai dokumentuota. Laikykite nepasiekiamai.",
+    swap: "Brazilinis riešutas, pinijų riešutai, kaštonai",
+    note: "<b>Kodėl brangūs:</b> medis pirmą derlių duoda po 7–10 metų, o kevalas toks kietas, kad reikia pramoninės įrangos. Tai vienas brangiausių riešutų pasaulyje."
+  },
+  {
+    id: "pekano",
+    name: "Pekano riešutai",
+    latin: "Carya illinoinensis",
+    cats: ["riesutines"],
+    desc: "Graikinių riešutų giminaičiai iš Šiaurės Amerikos — saldesni, švelnesni ir be to būdingo kartumo. Pekano pyragas yra JAY Padėkos dienos klasika.",
+    origin: "Misisipės upės slėnis; vienintelis pagrindinis riešutas, kilęs iš dabartinių JAV teritorijos. Pavadinimas kilęs iš algonkinų kalbos žodžio, reiškiančio riešutą, kurį reikia sudaužyti akmeniu.",
+    nutrition: "691 kcal · baltymų 9,2 g · riebalų 72 g · skaidulų 9,6 g · mangano 4,5 mg",
+    key: "Oleino rūgštis, gama tokoferolis, manganas, cinkas, flavonoidai",
+    taste: "Saldus, sviestinis, be kartumo",
+    uses: [
+      "Pekano pyragas ir desertai",
+      "Į salotas ir granolą",
+      "Skrudinti su medumi ir druska — užkandis",
+      "Į duonos ir bandelių tešlą",
+      "Rūkymui — pekano medienos drožlės"
+    ],
+    prep: "Skrudinkite 175 °C 7–8 min. — jie prisvyla greičiau nei kiti riešutai dėl riebalų gausos. Laikykite šaldytuve.",
+    dose: "Sauja (30 g, apie 19 puselių)",
+    avoid: "Riešutų alergija — kryžminė su graikiniais. Labai kaloringi ir greitai apkarsta.",
+    swap: "Graikiniai riešutai (kartesni), lazdyno riešutai",
+    note: "<b>Skirtumas nuo graikinių:</b> pekano neturi tos kartokos odelės, todėl juos galima naudoti nelupant ir jie geriau tinka saldumynams."
+  },
+  {
+    id: "kastonu",
+    name: "Kaštonai (valgomieji)",
+    latin: "Castanea sativa",
+    cats: ["riesutines"],
+    desc: "Vienintelis riešutas, kuris maistine sudėtimi artimesnis grūdui nei riešutui — jame dominuoja krakmolas, o ne riebalai. Kadaise Pietų Europoje vadintas „duonos medžiu“.",
+    origin: "Pietų Europa ir Mažoji Azija. Apeninų ir Korsikos kalnuose kaštonų miltai šimtmečius pakeitė grūdus ten, kur javai nederėjo.",
+    nutrition: "213 kcal · baltymų 2,4 g · riebalų 2,3 g · skaidulų 8,1 g · vitamino C 43 mg",
+    key: "Krakmolas, vitaminas C (retas riešutuose), kalis, beglitimiai",
+    taste: "Saldus, miltingas, švelnus",
+    uses: [
+      "Kepti ant ugnies — žiemos gatvių klasika",
+      "Į paukštienos įdarus ir troškinius",
+      "Kaštonų miltai (beglitimiai) — Korsikos ir Toskanos kepiniams",
+      "Marron glacé — cukruje virti kaštonai",
+      "Kaštonų kremas desertams"
+    ],
+    prep: "<b>Būtinai įpjaukite kryžiuką</b> ant plokščiosios pusės prieš kepdami — kitaip garai suplėšys kaštoną sprogimu. Kepkite 200 °C 20–25 min., lupkite karštus.",
+    dose: "8–10 kaštonų porcijai",
+    avoid: "<b>Nepainiokite su arkliniais kaštonais</b> (Aesculus hippocastanum) — jie nevalgomi ir nuodingi, sukelia vėmimą ir žarnyno sutrikimus. Valgomieji turi smailų kuokštelį viršuje ir auga dygliuotoje, tankiai apaugusioje šluotelėje; arkliniai apvalūs, su retais storais spygliais.",
+    swap: "Bulvės ar batatai tekstūrai; kaštonų miltai → sorgo miltai",
+    note: "<b>Lietuvoje</b> gatvėse dažniausiai auga būtent arkliniai kaštonai — jų vaisiai nevalgomi. Valgomieji kaštonai pas mus neauga ir yra atvežtiniai."
+  },
+
+  /* ============================================================
+     PRIESKONINĖS — papildomos
+     ============================================================ */
+  {
+    id: "vaniles",
+    name: "Vanilės sėklos",
+    latin: "Vanilla planifolia",
+    cats: ["prieskoniai"],
+    desc: "Juodi taškeliai vanilės ankštyje — tai tikrosios sėklos. Antras brangiausias prieskonis pasaulyje po šafrano, nes kiekvienas žiedas apdulkinamas ranka.",
+    origin: "Meksika, kur ją augino totonakai ir actekai. Už Meksikos ribų vanilė ilgai nederėjo, kol 1841 m. 12-metis vergas Edmondas Albiusas Reunjone išrado rankinio apdulkinimo būdą, naudojamą iki šiol.",
+    nutrition: "Vartojama miligramais — mitybinės reikšmės neturi",
+    key: "Vanilinas (2–3 % ankštyje), daugiau nei 200 kitų aromatinių junginių",
+    taste: "Saldus, kreminis, gėliškas, su dūmo ir džiovintų vaisių natomis",
+    uses: [
+      "Desertai, kremai, ledai, kepiniai",
+      "Naminis vanilės ekstraktas — ankštys degtinėje 2–3 mėn.",
+      "Vanilės cukrus — panaudota ankštis įkišama į cukrų",
+      "Į žuvies ir jūros gėrybių padažus (netikėtai gerai)",
+      "Parfumerijoje kaip bazinė nata"
+    ],
+    prep: "Perpjaukite ankštį išilgai ir peilio buku kraštu išgramdykite sėklas. <b>Ankšties nemeskite</b> — ji turi daugiau aromato nei sėklos; įdėkite į cukrų arba į verdamą pieną.",
+    dose: "Pusė–viena ankštis receptui",
+    avoid: "Didžioji dalis rinkoje esančios „vanilės“ yra sintetinis vanilinas iš lignino ar naftos produktų — tai ne klasta, jei taip ir nurodyta, bet skonis paprastesnis. Etiketėje ieškokite „vanilės ekstraktas“, ne „vanilinis aromatas“.",
+    swap: "Tonkinės pupelės (atsargiai — turi kumarino), vanilės pasta",
+    note: "<b>Kodėl tokia brangi:</b> žiedas atsiveria vienai dienai per metus ir turi būti apdulkintas rankomis per kelias valandas. Nuo apdulkinimo iki paruoštos ankšties praeina apie metus."
+  },
+  {
+    id: "anatto",
+    name: "Anato (achiote) sėklos",
+    latin: "Bixa orellana",
+    cats: ["prieskoniai"],
+    desc: "Ryškiai raudonos sėklos, naudojamos daugiausia kaip natūralus dažiklis. Būtent jos suteikia spalvą Čederio sūriui, sviestui ir Lotynų Amerikos patiekalams.",
+    origin: "Amazonė ir Karibai. Indėnai jomis dažė kūną ir naudojo apsaugai nuo saulės bei vabzdžių — iš čia ir pavadinimas „raudonasis auksas“.",
+    nutrition: "Vartojama kaip dažiklis — mitybinės reikšmės neturi",
+    key: "Biksinas ir norbiksinas (karotinoidai, maisto dažiklis E160b)",
+    taste: "Vos juntamas — žemiškas, pipirinis, šiek tiek riešutinis",
+    uses: [
+      "Cochinita pibil ir kiti Jukatano patiekalai",
+      "Sūrių (čederio, mimoleto, gloucester) ir sviesto dažymui",
+      "Ryžių ir troškinių spalvai — pigi šafrano alternatyva spalvai",
+      "Filipinų ir Karibų virtuvėse",
+      "Kosmetikoje ir tekstilės dažymui"
+    ],
+    prep: "Pakaitinkite sėklas aliejuje ant silpnos ugnies, kol jis nusidažys oranžine, tada sėklas išimkite — naudojamas nusidažęs aliejus. Arba pirkite jau paruoštą achiote pastą.",
+    dose: "Kaip dažiklis",
+    avoid: "E160b priskiriamas prie dažiklių, kurie retais atvejais sukelia alergines reakcijas — žinomi dilgėlinės atvejai. Nedažo taip kaip šafranas skoniu: spalva panaši, aromatas — ne.",
+    swap: "Ciberžolė (spalvai), saldžiosios paprikos (spalvai ir skoniui)",
+    note: "<b>Kodėl svarbu žinoti:</b> jei kada stebėjotės, kodėl čederis oranžinis, nors pienas baltas — atsakymas yra anato. Tradicija kilo, kai gamintojai dažė sūrį, imituodami sodresnę vasaros pieno spalvą."
+  },
+  {
+    id: "mahlepo",
+    name: "Mahlepo sėklos",
+    latin: "Prunus mahaleb",
+    cats: ["prieskoniai"],
+    desc: "Smulkios vyšnių giminaičio kauliukų sėklos, maltos naudojamos graikų ir turkų kepiniuose. Skonis — tarp migdolų, vyšnių ir marcipano.",
+    origin: "Viduržemio jūros regionas ir Artimieji Rytai. Graikijos tsoureki ir Turkijos çörek be jo neįsivaizduojami.",
+    nutrition: "Vartojama šaukšteliais — mitybinės reikšmės neturi",
+    key: "Kumarinas, benzaldehidas (marcipano aromato šaltinis)",
+    taste: "Karčiai saldus, migdolų ir vyšnių kauliukų",
+    uses: [
+      "Tsoureki — graikiška Velykų duona",
+      "Turkiški ir armėniški šventiniai kepiniai",
+      "Į sausainius ir sūrio pyragus Artimuosiuose Rytuose",
+      "Į kai kuriuos sūrius Kipre"
+    ],
+    prep: "Malkite prieš pat naudojimą — maltas labai greitai praranda aromatą ir tampa tiesiog kartokas. Receptui pakanka 1–2 šaukštelių.",
+    dose: "1–2 šaukšteliai kepiniui",
+    avoid: "Turi kumarino, kurio dideli kiekiai kenkia kepenims — bet vartojami kiekiai tokie maži, kad tai neaktualu. Per daug įdėjus kepinys tampa nemaloniai kartus.",
+    swap: "Migdolų ekstraktas su žiupsneliu vyšnių (apytiksliai)",
+    note: "<b>Ieškokite Artimųjų Rytų parduotuvėse</b> — mahlepas retai parduodamas įprastuose prekybos centruose, o be jo tsoureki skonis tiesiog kitoks."
+  },
+  {
+    id: "rojaus",
+    name: "Rojaus grūdeliai",
+    latin: "Aframomum melegueta",
+    cats: ["prieskoniai"],
+    desc: "Vakarų Afrikos kardamono giminaičio sėklos, viduramžiais Europoje buvusios brangesnės už pipirus. Vėliau beveik pamirštos, dabar grįžtančios.",
+    origin: "Vakarų Afrikos pakrantė — regionas viduramžiais net vadintas Grūdelių krantu. Portugalai jomis prekiavo kaip pigesne pipirų alternatyva.",
+    nutrition: "Vartojama kaip prieskonis",
+    key: "Gingerolis ir šogaolis (tos pačios medžiagos kaip imbiere), paradolis",
+    taste: "Aštrus kaip pipirai, bet su imbiero, citrinos ir kardamono natomis",
+    uses: [
+      "Vakarų Afrikos troškiniuose ir žuvies patiekaluose",
+      "Į skandinaviškus akvavitus ir kraftinius alus",
+      "Vietoj pipirų mėsai ir daržovėms",
+      "Į prieskonių mišinius (ras el hanout)"
+    ],
+    prep: "Malkite prieš naudojimą arba sutrinkite grūstuvėje. Aštrumas švelnesnis ir aromatingesnis nei juodųjų pipirų — galima dėti drąsiau.",
+    dose: "Kaip prieskonis",
+    avoid: "Retai kelia problemų. Europoje sunkiai randami — ieškokite specializuotose prieskonių parduotuvėse.",
+    swap: "Juodieji pipirai su žiupsneliu kardamono ir imbiero",
+    note: "<b>Istorinė smulkmena:</b> viduramžiais alus Anglijoje buvo gardinamas rojaus grūdeliais, kol XVIII a. tai uždraudė įstatymas. Šiandien kraftinės aludarės šią tradiciją atgaivino."
+  },
+  {
+    id: "pipiru",
+    name: "Juodieji pipirai",
+    latin: "Piper nigrum",
+    cats: ["prieskoniai"],
+    desc: "Populiariausias prieskonis pasaulyje. Botaniškai tai kaulavaisis su sėkla viduje, o juoda, balta, žalia ir raudona spalva — tas pats vaisius skirtingose brandos ir apdorojimo stadijose.",
+    origin: "Indijos Malabaro pakrantė. Pipirų prekyba lėmė Didžiuosius geografinius atradimus — būtent jų ieškoti plaukė Vasco da Gama.",
+    nutrition: "251 kcal · baltymų 10 g · skaidulų 25 g (vartojama gramais)",
+    key: "Piperinas (aštrumo šaltinis), limonenas, beta kariofilenas",
+    taste: "Aštrus, medienos ir citrusų natos",
+    uses: [
+      "Universalus prieskonis beveik viskam",
+      "Į cacio e pepe, steikų mišinius, marinatus",
+      "Baltieji pipirai — šviesiems padažams ir azijietiškiems patiekalams",
+      "Žalieji — į prancūziškus padažus",
+      "Su ciberžole — piperinas kelis kartus pagerina kurkumino pasisavinimą"
+    ],
+    prep: "<b>Malkite prieš naudojimą.</b> Piperinas ir aromatiniai aliejai lakūs — maltas pipiras per kelis mėnesius tampa tiesiog dulkėmis be aštrumo. Kaitinant ilgai aštrumas silpnėja, todėl dalį dėkite pabaigoje.",
+    dose: "Kaip prieskonis",
+    avoid: "Dideliais kiekiais dirgina skrandį ir gali stiprinti kai kurių vaistų poveikį, nes piperinas veikia kepenų fermentus. Sergantiems refliuksu — saikas.",
+    swap: "Rojaus grūdeliai, ilgieji pipirai, Sičuano pipirai (visai kitas poveikis)",
+    note: "<b>Keturios spalvos, vienas augalas:</b> žali — neprinokę ir konservuoti; juodi — neprinokę, virti ir džiovinti (odelė susiraukšlėja ir pajuoduoja); balti — visiškai prinokę ir nulupti; raudoni — prinokę ir konservuoti."
+  },
+  {
+    id: "zvaigzdanyziu",
+    name: "Žvaigždiniai anyžiai",
+    latin: "Illicium verum",
+    cats: ["prieskoniai", "atsargiai"],
+    desc: "Aštuonkampė žvaigždė su sėkla kiekviename spindulyje. Su tikraisiais anyžiais nesusiję, nors kvapą lemia ta pati medžiaga — anetolis.",
+    origin: "Pietų Kinija ir Vietnamas. Kinų penkių prieskonių mišinio ir pho sultinio pagrindas.",
+    nutrition: "337 kcal · vartojama vienetais",
+    key: "Anetolis, šikimo rūgštis (vaisto oseltamiviro pirminė žaliava)",
+    taste: "Stiprus, saldus, saldymedžio ir anyžių",
+    uses: [
+      "Pho sultinys — vienas esminių prieskonių",
+      "Kinų penkių prieskonių mišinys",
+      "Į kiaulieną, antieną, troškintą mėsą",
+      "Į glintveiną ir kompotus",
+      "Į marinatus ir sirupus"
+    ],
+    prep: "Dedama sveika žvaigždė ir po virimo išimama. Vienos–dviejų žvaigždžių pakanka visam puodui — perdėjus prieskonis užgožia viską.",
+    dose: "1–2 žvaigždės patiekalui",
+    avoid: "<b>Japoniškas žvaigždinis anyžius</b> (Illicium anisatum) yra <b>nuodingas</b> — jame yra anisatino, sukeliančio traukulius. Jis išoriškai panašus, ir rinkoje pasitaikė sumaišymo atvejų, dėl kurių nukentėjo kūdikiai, girdyti arbata. Kūdikiams žvaigždinių anyžių arbatos neduokite; pirkite iš patikimų tiekėjų.",
+    swap: "Anyžiai, pankoliai (švelnesni)",
+    note: "<b>Ryšys su vaistais:</b> šikimo rūgštis, išgaunama iš žvaigždinių anyžių, buvo pagrindinė žaliava gaminant oseltamivirą (Tamiflu). Tai nereiškia, kad prieskonis veikia nuo gripo — molekulė vaistui dar turi būti sintetiškai perdirbta."
+  },
+
+  /* ============================================================
+     TECHNINĖS IR NEMAISTINĖS
+     ============================================================ */
+  {
+    id: "moringos",
+    name: "Moringos sėklos",
+    latin: "Moringa oleifera",
+    cats: ["atsargiai", "riesutines"],
+    desc: "„Būgno lazdelės medžio“ sėklos su neįprasta savybe — sumaltos jos valo drumzliną vandenį, nusodindamos purvą ir dalį bakterijų.",
+    origin: "Šiaurės Indijos Himalajų papėdės; šiandien auginama visuose atogrąžų regionuose. Naudojamos ir sėklos, ir lapai, ir ankštys.",
+    nutrition: "~400 kcal · baltymų 35 g · riebalų 40 g (aliejaus)",
+    key: "Katijoniniai baltymai (koaguliantai), behenino rūgštis aliejuje, izotiocianatai",
+    taste: "Kartokas, su sparčiai stiprėjančiu saldumu burnoje",
+    uses: [
+      "Vandens valymas — 1–2 sumaltos sėklos 1 litrui drumzlino vandens",
+      "Ben aliejus (behen oil) — nekarstantis, naudotas laikrodžių mechanizmams ir parfumerijoje",
+      "Skrudintos sėklos kaip užkandis (Afrikoje, Azijoje)",
+      "Kosmetikoje — stabilus, lengvas aliejus"
+    ],
+    prep: "Vandens valymui: nulupkite, sumalkite į miltelius, sumaišykite su nedideliu kiekiu vandens, supilkite į valomą vandenį, pamaišykite 5 min. ir palikite nusistoti 1–2 val.",
+    dose: "Kaip maistas — keli vienetai; kaip papildas nerekomenduojama savarankiškai",
+    avoid: "<b>Vandens valymas moringomis nėra dezinfekcija</b> — jis pašalina drumstumą ir dalį bakterijų, bet vandenį vis tiek reikia virinti. Dideli sėklų kiekiai turi vidurius laisvinantį poveikį. Nėštumo metu moringos šaknų ir žievės preparatų vengiama.",
+    swap: "Vandens valymui — filtravimas ir virinimas",
+    note: "<b>Kodėl tai svarbu:</b> ten, kur nėra vandentiekio, moringos sėklos yra prieinamas būdas paruošti vandenį prieš virinant — technologija, kurią tyrinėja ir tarptautinės pagalbos organizacijos."
+  },
+  {
+    id: "nigerio",
+    name: "Nigerio sėklos (nug)",
+    latin: "Guizotia abyssinica",
+    cats: ["kasdienes"],
+    desc: "Mažos juodos blizgančios sėklos iš Etiopijos, ten esančios svarbiu aliejaus šaltiniu. Europoje geriausiai žinomos kaip lesalas dagiliams.",
+    origin: "Etiopijos aukštumos, kur nug aliejus tradiciškai naudojamas kasdien. Indijoje taip pat auginamos (ramtil).",
+    nutrition: "~500 kcal · baltymų 20 g · riebalų 40 g",
+    key: "Linolo rūgštis (~70 % aliejaus), vitaminas E",
+    taste: "Riešutinis, primenantis saulėgrąžas",
+    uses: [
+      "Nug aliejus — Etiopijos virtuvėje kasdienis",
+      "Skrudintos ir maltos į etiopiškus padažus",
+      "Paukščių lesale — mėgstamos dagilių ir svilikų",
+      "Į duonos mišinius"
+    ],
+    prep: "Skrudinkite trumpai — sėklos labai smulkios ir greitai sudega. Maltos naudojamos padažams tirštinti.",
+    dose: "Kaip prieskonis ar aliejus",
+    avoid: "Europoje daugiausia parduodamos kaip paukščių lesalas — toks produktas neskirtas žmonėms ir gali būti nevalytas. Maistui pirkite specialiai maistui skirtas.",
+    swap: "Saulėgrąžų sėklos",
+    note: "<b>Paukščių smulkmena:</b> nigerio sėklos lesyklose yra termiškai apdorotos, kad nesudygtų — todėl po lesykla neišauga dagių laukas."
+  },
+  {
+    id: "medvilnes",
+    name: "Medvilnės sėklos",
+    latin: "Gossypium spp.",
+    cats: ["atsargiai"],
+    desc: "Šalutinis medvilnės pramonės produktas. Aliejus po rafinavimo naudojamas maiste, bet pačiose sėklose yra toksiško pigmento.",
+    origin: "Nepriklausomai prijaukinta Amerikoje, Indijoje ir Afrikoje. Sėklų yra apie du trečdaliai medvilnės derliaus masės.",
+    nutrition: "Sėklos maistui netinka; aliejus — 884 kcal / 100 g",
+    key: "Gosipolis (toksiškas polifenolis), linolo rūgštis aliejuje",
+    taste: "Nevalgomos",
+    uses: [
+      "Rafinuotas medvilnės sėklų aliejus — kepimui ir maisto pramonėje (JAV)",
+      "Išspaudos — atrajotojų pašarui (jie gosipolį toleruoja)",
+      "Celiuliozė ir techniniai produktai"
+    ],
+    prep: "Tik pramoninis perdirbimas — rafinuojant gosipolis pašalinamas.",
+    dose: "Tik kaip rafinuotas aliejus",
+    avoid: "<b>Gosipolis toksiškas</b> — vienagubiams gyvūnams ir žmonėms sukelia vaisingumo sutrikimus; Kinijoje jis net buvo tirtas kaip vyriška kontracepcijos priemonė, kol paaiškėjo, kad poveikis dažnai negrįžtamas. Neapdorotų sėklų ar nerafinuoto aliejaus nevartokite.",
+    swap: "Saulėgrąžų, rapsų aliejus",
+    note: "<b>Yra ir išimtis:</b> išvestos „begosipolės“ medvilnės veislės, kurių sėklos tinka maistui — bet rinkoje jos vis dar retos."
+  },
+  {
+    id: "jojobos",
+    name: "Jojobos sėklos",
+    latin: "Simmondsia chinensis",
+    cats: ["atsargiai"],
+    desc: "Dykumų krūmo sėklos, kurių „aliejus“ chemiškai yra skystas vaškas. Kosmetikos pramonėje jis pakeitė banginių spermacetą.",
+    origin: "Sonoros dykuma JAV ir Meksikoje. Komerciškai auginamas nuo 1970-ųjų, kai buvo uždrausta prekyba banginių produktais.",
+    nutrition: "Nevalgomos",
+    key: "Vaškiniai esteriai (~97 %), simondsinas",
+    taste: "Nevalgomos — kartokos",
+    uses: [
+      "Jojobos aliejus kosmetikoje — bazė serumams ir eteriniams aliejams",
+      "Techninėse alyvose ir tepaluose",
+      "Barzdos ir plaukų priežiūros produktuose"
+    ],
+    prep: "Tik pramoninis spaudimas.",
+    dose: "Tik išoriškai",
+    avoid: "<b>Nevalgyti:</b> vaškiniai esteriai nevirškinami ir sukelia viduriavimą; sėklose taip pat yra simondsino, slopinančio apetitą ir toksiško gyvūnams.",
+    swap: "Kosmetikai — skvalanas, lazdyno riešutų aliejus",
+    note: "<b>Sąsaja su aliejų žinynu:</b> jojobos aliejus praktiškai neapkarsta ir laikosi metų metus — todėl jis yra geriausia bazė naminiams mišiniams, kuriuos ruošiate iš anksto."
+  },
+  {
+    id: "betelio",
+    name: "Betelio riešutas (areka)",
+    latin: "Areca catechu",
+    cats: ["atsargiai"],
+    desc: "Arekos palmės sėkla, kramtoma su betelio lapais Pietų ir Pietryčių Azijoje. Vienas plačiausiai vartojamų psichoaktyvių augalų pasaulyje — ir vienas pavojingiausių.",
+    origin: "Pietryčių Azija ir Ramiojo vandenyno salos. Kramtymo tradicija tęsiasi tūkstantmečius ir yra giliai įaugusi į kultūrą.",
+    nutrition: "Nevartotina",
+    key: "Arekolinas (psichoaktyvus alkaloidas), taninai",
+    taste: "Sutraukiantis, kartokas; kramtomas dažo seiles ir dantis raudonai",
+    uses: [
+      "Kramtymas su betelio lapais ir kalkėmis (paan)",
+      "Ceremoninis naudojimas vestuvėse ir svečių pasitikime",
+      "Tradicinėje medicinoje (istoriškai)"
+    ],
+    prep: "Neaprašinėjama — naudojimas nerekomenduojamas.",
+    dose: "Nevartoti",
+    avoid: "<b>Tarptautinė vėžio tyrimų agentūra (IARC) priskiria betelio riešutą 1 grupės kancerogenams</b> — įrodyta, kad jis sukelia burnos ertmės ir stemplės vėžį, net vartojamas be tabako. Taip pat sukelia priklausomybę ir burnos submukozinę fibrozę. Pasaulyje jį vartoja šimtai milijonų žmonių, ir tai viena pagrindinių burnos vėžio priežasčių Pietų Azijoje.",
+    swap: "—",
+    note: "<b>Kodėl įtrauktas į žinyną:</b> ne kaip produktas, o kaip informacija. Tai dažnai sutinkama sėkla, kuri klaidingai laikoma nekalta tradicija — nors rizika įrodyta ir didelė."
+  },
+  {
+    id: "guaranos",
+    name: "Guaranos sėklos",
+    latin: "Paullinia cupana",
+    cats: ["atsargiai", "riesutines"],
+    desc: "Amazonės vijoklio sėklos, turinčios daugiausia kofeino iš visų augalų — 2–4 kartus daugiau nei kavos pupelės.",
+    origin: "Brazilijos Amazonė; sateré-mavė gentis guaraną augino ir naudojo dar iki europiečių atvykimo. Brazilijoje guaranos gazuoti gėrimai populiarūs kaip kola.",
+    nutrition: "Kofeino 2–6 % (kavos pupelėse 1–2 %)",
+    key: "Kofeinas (guaranine), teobrominas, teofilinas, taninai",
+    taste: "Kartokas, sutraukiantis",
+    uses: [
+      "Energiniai gėrimai ir papildai",
+      "Brazilijos guaranos limonadas",
+      "Tradiciškai — tarkuotos džiovintos sėklos vandenyje",
+      "Į sportinės mitybos produktus"
+    ],
+    prep: "Džiovinamos, skrudinamos ir malamos. Tradiciškai spaudžiamos į lazdelę ir tarkuojamos žuvies liežuvio kaulu.",
+    dose: "Skaičiuokite pagal kofeiną — iki 400 mg per dieną suaugusiam iš visų šaltinių",
+    avoid: "<b>Lengva viršyti saugią kofeino normą</b>, nes papilduose koncentracija didelė, o etiketėse kiekis ne visada aiškus. Derinys su energiniais gėrimais ir kava kelia širdies ritmo sutrikimų riziką. Nėštumo metu, vaikams ir paaugliams — netinka. Taninai mažina geležies pasisavinimą.",
+    swap: "Kava, arbata, matė",
+    note: "<b>Praktinis patarimas:</b> jei perkate papildą su guarana, susiskaičiuokite bendrą kofeino kiekį kartu su kava ir arbata — dažniausiai būtent dėl sudėties nesekimo atsiranda nemiga ir širdies plakimas."
+  },
+  {
+    id: "kolos",
+    name: "Kolos riešutai",
+    latin: "Cola nitida / acuminata",
+    cats: ["atsargiai", "riesutines"],
+    desc: "Vakarų Afrikos medžio sėklos, kramtomos dėl kofeino ir vaidinančios svarbų vaidmenį socialiniuose ritualuose. Davė pavadinimą visai gėrimų kategorijai.",
+    origin: "Vakarų Afrikos lietaus miškai. Svečio pavaišinimas kolos riešutu yra tradicinis pagarbos ženklas Nigerijoje ir kaimyninėse šalyse.",
+    nutrition: "Kofeino ~2 %",
+    key: "Kofeinas, teobrominas, kolatinas, taninai",
+    taste: "Kartus iš pradžių, po to saldokas; sutraukiantis",
+    uses: [
+      "Kramtomi švieži Vakarų Afrikoje",
+      "Istoriškai — originalaus kolos gėrimo receptūroje",
+      "Tradicinėje medicinoje ir apeigose",
+      "Ekstraktas kai kuriuose gėrimuose"
+    ],
+    prep: "Kramtomi švieži arba džiovinami ir malami.",
+    dose: "Kaip kofeino šaltinis — saikingai",
+    avoid: "Kofeino poveikis ir priklausomybė. Kai kurie tyrimai sieja ilgalaikį kramtymą su burnos gleivinės pakitimais, nors rizika neprilygsta betelio riešutui. Taninai mažina geležies pasisavinimą.",
+    swap: "Kava, guarana",
+    note: "<b>Istorinė smulkmena:</b> šiuolaikiniai kolos gėrimai kolos riešutų ekstrakto beveik nebenaudoja — kofeinas dedamas atskirai, o skonis kuriamas iš citrusų ir prieskonių aliejų."
+  },
+  {
+    id: "dzekfruto",
+    name: "Džekfrūto sėklos",
+    latin: "Artocarpus heterophyllus",
+    cats: ["kasdienes"],
+    desc: "Didelės šviesios sėklos džekfrūto viduje — dažniausiai išmetamos Vakaruose, bet Pietų Indijoje ir Šri Lankoje valgomos kaip daržovė.",
+    origin: "Indijos Vakarų Ghatai. Vienas vaisius gali sverti 40 kg ir turėti iki 500 sėklų.",
+    nutrition: "Virtos: 184 kcal · baltymų 7 g · riebalų 0,4 g · skaidulų 1,5 g · rezistentinio krakmolo daug",
+    key: "Rezistentinis krakmolas, baltymai, kalis, magnis, jakalinas (lektinas)",
+    taste: "Primena kaštonus ir bulves vienu metu",
+    uses: [
+      "Virtos ar keptos kaip kaštonai",
+      "Į Pietų Indijos karius (chakka kuru)",
+      "Maltos į miltus kepiniams",
+      "Skrudintos kaip užkandis"
+    ],
+    prep: "<b>Būtinai virti</b> 20–30 min. arba kepti — žalios turi tripsino inhibitorių ir yra nevirškinamos. Nulupkite baltą plėvelę ir rudą odelę.",
+    dose: "Kaip daržovė — porcija",
+    avoid: "Žalių nevalgyti. Dėl rezistentinio krakmolo dideli kiekiai pučia pilvą.",
+    swap: "Kaštonai, bulvės",
+    note: "<b>Nulis atliekų:</b> jei kada pirksite šviežią džekfrūtą, sėklas pasilikite — jos maistingesnės už patį vaisiaus minkštimą ir turi kur kas daugiau baltymų."
+  },
+  {
+    id: "tamarindo",
+    name: "Tamarindo sėklos",
+    latin: "Tamarindus indica",
+    cats: ["kasdienes"],
+    desc: "Kietos blizgančios rudos sėklos tamarindo ankštyje. Pats minkštimas naudojamas visur Azijoje, o sėklos — pramonėje ir kaip maistas sunkmečiu.",
+    origin: "Afrika, išplitęs Indijoje ir Pietryčių Azijoje. Indijoje tamarindas yra pagrindinis rūgštumo šaltinis, kaip citrina Viduržemio jūros regione.",
+    nutrition: "~340 kcal · baltymų 13 g · riebalų 6 g · skaidulų daug",
+    key: "Ksiloglukanas (polisacharidas), baltymai, taninai apvalkale",
+    taste: "Kartokas be apdorojimo; skrudintų — riešutinis",
+    uses: [
+      "Skrudintos ir nuluptos — užkandis Indijoje ir Afrikoje",
+      "Tamarindo sėklų milteliai (TKP) — tirštiklis maisto ir tekstilės pramonėje",
+      "Į miltų mišinius sunkmečiu",
+      "Klijų ir popieriaus pramonėje"
+    ],
+    prep: "Skrudinkite, kol apvalkalas pradės trūkinėti, nulupkite ir mirkykite, kad dingtų taninų kartumas.",
+    dose: "Kaip užkandis — nedaug",
+    avoid: "Neapdorotos kartokos ir sunkiai virškinamos dėl taninų.",
+    swap: "Kaštonai, džekfrūto sėklos",
+    note: "<b>Pramoninis panaudojimas:</b> ksiloglukanas iš tamarindo sėklų naudojamas kaip tirštiklis ir stabilizatorius — dažnai jį sutinkate produktų sudėtyje net nežinodami."
+  },
+  {
+    id: "avokado",
+    name: "Avokado kauliukas",
+    latin: "Persea americana",
+    cats: ["atsargiai"],
+    desc: "Didelis kauliukas avokado viduje, kurį internete kartais siūloma džiovinti ir malti į kokteilius. Tam nėra nei pakankamo pagrindo, nei saugumo duomenų.",
+    origin: "Centrinė Amerika. Kauliukas sudaro apie 16 % vaisiaus masės.",
+    nutrition: "Netirtas kaip maistas; daug netirpių skaidulų ir polifenolių",
+    key: "Persinas, taninai, saponinai, katechinai",
+    taste: "Ryškiai kartus, sutraukiantis",
+    uses: [
+      "Natūralus dažiklis tekstilei (duoda rausvą atspalvį)",
+      "Tiriamas kaip antioksidantų ir krakmolo šaltinis pramonėje",
+      "Sodinimui — iš kauliuko galima užauginti augalą"
+    ],
+    prep: "Maistui neruošiamas.",
+    dose: "Nevartoti",
+    avoid: "<b>Nerekomenduojama valgyti.</b> Kauliuke yra persino — medžiagos, toksiškos daugeliui gyvūnų (ypač paukščiams, arkliams, graužikams), ir didelis kiekis taninų. Žmonėms poveikis mažai tirtas, saugi dozė nenustatyta, o internete plintantys „kauliuko kokteiliai“ nėra pagrįsti jokiais patikimais tyrimais.",
+    swap: "Skaidulų — linų sėmenys, psyllium",
+    note: "<b>Ką su juo daryti:</b> pasodinkite. Įsmeikite tris dantų krapštukus ir pastatykite plačiąja puse vandenyje — po 4–8 savaičių sudygs. Vaisių Lietuvoje neduos, bet augalas gražus."
+  },
+
+  /* ============================================================
+     DAIGINIMUI — papildomos
+     ============================================================ */
+  {
+    id: "kopustu",
+    name: "Raudonųjų kopūstų sėklos",
+    latin: "Brassica oleracea var. capitata",
+    cats: ["daiginimui"],
+    desc: "Daiginamos sėklos, duodančios ryškiai violetinius daigus su dideliu antocianinų kiekiu. Gražiausi iš įprastų daigų.",
+    origin: "Viduržemio jūros regionas. Kopūstinių daigų tyrimai rodo panašius gliukozinolatų kiekius kaip brokoliuose.",
+    nutrition: "Daigai: ~30 kcal / 100 g · vitaminai C ir K · antocianinai",
+    key: "Antocianinai, gliukozinolatai, vitaminas C, sulforafano pirmtakai",
+    taste: "Švelniai aštrus, kopūstinis, saldokas",
+    uses: [
+      "Į salotas ir sumuštinius — dėl spalvos ir skonio",
+      "Patiekalų puošimui",
+      "Į daigų mišinius",
+      "Ant sriubų ir tyrelių"
+    ],
+    prep: "Mirkykite 6–8 val., plaukite 2 k./d., paruošti per 4–5 paras. Paskutinę parą šviesoje — spalva tampa ryškesnė.",
+    dose: "Sauja į patiekalą",
+    avoid: "Ta pati bakterijų rizika kaip ir visiems daigams — sertifikuotos sėklos, reguliarus plovimas, švarūs indai.",
+    swap: "Brokolių, ridikėlių daigai",
+    note: "<b>Spalvos chemija:</b> antocianinai keičia atspalvį pagal rūgštingumą — užlašinę citrinos sulčių pamatysite, kaip violetinė virsta rausva. Tai tie patys pigmentai, kaip mėlynėse."
+  },
+  {
+    id: "zelmenu",
+    name: "Kviečių želmenys (wheatgrass)",
+    latin: "Triticum aestivum",
+    cats: ["daiginimui"],
+    desc: "Ne sėkla, o jauni kviečių daigai, auginami 7–10 parų ir spaudžiami į sultis. Populiarus sveikatingumo produktas su kuklesniais įrodymais, nei žada reklama.",
+    origin: "Praktika išpopuliarėjo XX a. viduryje JAV, Ann Wigmore propaguojamos žalios mitybos judėjime.",
+    nutrition: "Sultys: mažai kalorijų · chlorofilas · vitaminai A, C, E, geležis",
+    key: "Chlorofilas, fermentai, vitaminai, mineralai",
+    taste: "Ryškiai žolinis, saldokas, kai kam — nemalonus",
+    uses: [
+      "Šviežiai spaustos sultys (30–60 ml porcija)",
+      "Į žaliuosius kokteilius",
+      "Milteliai kaip papildas",
+      "Katėms — kaip saugi žolė graužimui"
+    ],
+    prep: "Mirkykite kviečius 8–12 val., sėkite tankiai ant žemės padėkle, laikykite šviesoje 7–10 parų ir nukirpkite, kai pasieks 15–20 cm. Spauskite lėtaeigiu sulčiaspaudžiu — įprastas jų nesusmulkins.",
+    dose: "30–60 ml sulčių per dieną",
+    avoid: "<b>Teiginiai apie „detoksikaciją“ ir vėžio gydymą nepagrįsti.</b> Auginant namuose ant drėgnos žemės dažnai atsiranda pelėsis — pelijusių želmenų nenaudokite. Kai kam sukelia pykinimą. Nors kviečiai, želmenyse glitimo praktiškai nėra, bet sergantiems celiakija saugiau vengti dėl grūdų priemaišų.",
+    swap: "Miežių želmenys, špinatai, petražolės kokteilyje",
+    note: "<b>Realus vertinimas:</b> tai koncentruotos daržovių sultys su vitaminais ir chlorofilu. Naudinga kaip raciono papildymas, bet ne stebuklas — ir 60 ml sulčių maistinių medžiagų duoda mažiau nei lėkštė brokolių."
   }
 ];
